@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 $primary-color: #f84646;
 $white-color: #ffffff;
 $orange-red-color: #f72d2d;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,11 +22,11 @@ a {
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.text{
+.text {
   color: $white-color;
 }
 
@@ -40,10 +40,10 @@ button{
       font-weight: 600;
       font-size: 15px;
     }
-    .social-list{
+    .social-list {
       li {
         padding: 0 4px;
-        a{
+        a {
           color: rgba(0, 0, 0, 0.8);
         }
       }
@@ -59,7 +59,7 @@ button{
       margin-right: 10px;
       border-style: none;
     }
-    span{
+    span {
       color: $primary-color;
     }
   }
@@ -82,16 +82,16 @@ button{
   background-image: none;
   border-color: $primary-color;
   border-radius: 0.2rem;
-  &:hover{
+  &:hover {
     color: $white-color;
     background-color: $primary-color;
     border-color: $primary-color;
   }
 }
 
-.navbar{
+.navbar {
   padding: 0.25rem 1rem;
-  .navbar-brand{
+  .navbar-brand {
     padding-top: 0.265625rem;
     padding-bottom: 0.265625rem;
     font-size: 1.5625rem;
@@ -115,24 +115,24 @@ button{
   background-color: $primary-color;
   padding: 6px;
   border-radius: 50%;
-  i{
-    &:before{
-      content:"\f067"
+  i {
+    &:before {
+      content: "\f067";
     }
   }
 }
 
-.nav-link{
+.nav-link {
   color: #404040;
   font-size: 15px;
   transition: all 0.2s ease 0s;
   text-transform: uppercase;
 }
 
-.red-boxes-section{
+.red-boxes-section {
   color: $white-color;
   font-size: 16px;
-  .r-box{
+  .r-box {
     flex: 0 0 25%;
     max-width: 25%;
     padding: 6px 16px;
@@ -143,7 +143,7 @@ button{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    .icon-box{
+    .icon-box {
       width: 70px;
       height: 70px;
       border: 1px solid $white-color;
@@ -154,17 +154,17 @@ button{
       justify-content: center;
       flex: 0 0 70px;
     }
-    .text-box{
+    .text-box {
       padding-left: 24px;
     }
-    .r-box-title{
+    .r-box-title {
       font-size: 22px;
       text-transform: uppercase;
       margin-top: -3px;
       color: $white-color;
       text-decoration: none;
     }
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       left: 0;
@@ -179,7 +179,7 @@ button{
       opacity: 0;
     }
   }
-  p{
+  p {
     margin-bottom: 0;
     color: $white-color;
     font-size: 15px;
@@ -190,11 +190,11 @@ button{
   padding: 47px 0;
 }
 
-.bg-box{
+.bg-box {
   background: black;
   border-radius: 8px;
   padding: 20px;
-  .form-title{
+  .form-title {
     font-size: 30px;
     font-weight: 300;
     color: $white-color;
@@ -203,11 +203,11 @@ button{
   }
 }
 
-.checkboxes{
+.checkboxes {
   padding: 10px 0;
 }
 
-.custom-checkbox{
+.custom-checkbox {
   padding-left: 40px;
   font-size: 18px;
   font-weight: 400;
@@ -218,13 +218,13 @@ button{
       border-radius: 50%;
     }
     &:checked {
-      + .checkmark{
+      + .checkmark {
         background-color: $primary-color;
         border: 1px solid $primary-color;
       }
     }
   }
-  .checkmark{
+  .checkmark {
     width: 24px;
     height: 24px;
     display: block;
@@ -232,7 +232,7 @@ button{
     left: 0;
     top: 2px;
     transition: all 0.2s ease 0s;
-    &::before{
+    &::before {
       content: "";
       width: 8px;
       height: 8px;
@@ -249,7 +249,7 @@ button{
   }
 }
 
-.search-btn{
+.search-btn {
   min-width: 187px;
   height: 50px;
   display: inline-block;
@@ -263,20 +263,20 @@ button{
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.custom-search-button{
+.custom-search-button {
   color: $white-color;
   background-color: $primary-color;
   border-color: $primary-color;
-  &:hover{
+  &:hover {
     background-color: orangered;
     border: none;
   }
 }
 
-
-.relocate-pet-section{
+.relocate-pet-section {
   padding: 40px 0px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.06);
   background-image: url("../images/relocate-bg.jpg");
@@ -286,49 +286,55 @@ button{
   min-height: 450px;
   position: relative;
   z-index: 1;
-  .relocate-section-title{
+  .relocate-section-title {
     font-size: 64px;
     color: #232323;
     margin-bottom: 75px;
-    small{
+    small {
       font-size: 32px;
       padding-left: 25px;
     }
   }
-  .relocate-form-box{
+  .relocate-form-box {
     max-width: 636px;
   }
 }
 
-.relocate-form-box{
+.relocate-form-box {
   border-radius: 4px;
-  button{
+  button {
     background-color: $primary-color;
     border: none;
-    &:hover{
+    &:hover {
       background-color: $orange-red-color;
     }
   }
 }
 
-.featured-pets-section{
+.featured-pets-section {
   padding: 40px 0 20px;
+  .featured-slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -101px;
+    z-index: 3;
+  }
 }
 
-.paw-title-box{
-  .paw-title{
+.paw-title-box {
+  .paw-title {
     font-size: 38px;
     color: #414141;
-    .icon-box{
+    .featured-pets-icon-box {
       display: block;
       width: 100%;
       height: 100%;
       margin: 0 auto;
-      //margin-top: 0px;
-      //margin-top: -8px;
       max-width: 203px;
       position: relative;
-      &:before{
+      &:before {
         content: "";
         display: block;
         width: calc(50% - 18px);
@@ -338,6 +344,347 @@ button{
         bottom: 12px;
         position: absolute;
       }
+      &:after {
+        content: "";
+        display: block;
+        width: calc(50% - 18px);
+        border-bottom: 1px dashed #414141;
+        opacity: 0.4;
+        right: 0;
+        bottom: 12px;
+        position: absolute;
+      }
+    }
+    img {
+      width: 28px;
+      height: 27px;
+      fill: $primary-color;
     }
   }
+}
+
+.categories-banner-section {
+  padding: 40px 0 20px;
+  & [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
+.categories-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.bg-pet-home {
+  background-color: #82b1ff !important;
+}
+
+.categoies-banner-card {
+  min-height: 185px;
+  padding: 20px;
+  transition: all 0.2s ease 0s;
+  .category-icon {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    max-width: 42%;
+    max-height: 90%;
+  }
+}
+
+.bg-best-food {
+  background-color: #ec82ff !important;
+}
+
+.bg-pet-toys {
+  background-color: #5de88b !important;
+}
+
+.bg-bags {
+  background-color: #e8bc5d !important;
+}
+
+.bg-pet-cage {
+  background-color: #fa8b8b !important;
+}
+
+.bg-medicine {
+  background-color: #30b1ad !important;
+}
+
+.search-map-section {
+  z-index: 3;
+  position: relative;
+  height: 450px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  .contact-form {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+    flex: 0 1 900px;
+    padding: 40px 30px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 4px;
+  }
+  .contact-form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin: 0px -7px;
+    .col-box {
+      flex: 1 1 auto;
+      padding: 0 7px;
+      margin-bottom: 15px;
+      .text {
+        color: black;
+      }
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.has-float-label {
+  overflow: hidden;
+  text-align: left;
+  .form-control {
+    padding-top: 15px;
+  }
+}
+
+.buttons-box {
+  .btn-primary {
+    min-width: 97px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: $primary-color;
+    text-transform: uppercase;
+  }
+}
+
+.about-section {
+  padding: 40px 0;
+  background: $white-color;
+  .about-us-row {
+    flex-wrap: nowrap;
+    line-height: 38px;
+  }
+  .btn-box {
+    margin-top: 52px;
+  }
+  .btn {
+    min-width: 187px;
+    text-transform: uppercase;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #f84646;
+    border-color: #f84646;
+  }
+}
+
+.popular-pets-section {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 600;
+  .popular-pets-list {
+    display: flex;
+    margin: 0px -8px;
+    flex-wrap: wrap;
+    a{
+      text-decoration: none;
+    }
+  }
+  .icon-box {
+    width: 175px;
+    height: 171px;
+    border: 1px dashed #f84646;
+    padding: 20px 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+  }
+  .total-count {
+    margin-top: 8px;
+    color: black;
+  }
+}
+
+.footer {
+  background-color: #323232;
+  padding: 35px 0 0;
+  color: white;
+  font-size: 18px;
+  .logo-box {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .social-list-box {
+    .footer-social-list {
+      li {
+        padding: 0 4px;
+        margin-bottom: 8px;
+        a {
+          color: $white-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .section-title {
+    .list-title {
+      margin-bottom: 12px;
+    }
+  }
+  .menu-list {
+    margin-bottom: 35px;
+    a {
+      font-size: 1.125rem;
+      opacity: 0.6;
+      padding: 3px 0;
+      display: block;
+      text-decoration: none;
+    }
+  }
+  a {
+    color: white;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+  }
+  .copyright-box {
+    text-align: right;
+  }
+  .small-link-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    li {
+      position: relative;
+      a {
+        padding: 0 16px;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      &:after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  .form-control {
+    height: 43px;
+    border-radius: 20px;
+    font-size: 16px !important;
+    line-height: 1.2;
+  }
+}
+
+.input-group-append {
+  margin-left: -1px;
+}
+
+.footer-input-group {
+  .btn {
+    height: 43px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+.btn-outline-white {
+  color: $white-color;
+  background-color: transparent;
+  background-image: none;
+  border-color: $white-color;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 0;
+  font-weight: 600;
+  flex-wrap: wrap;
 }
