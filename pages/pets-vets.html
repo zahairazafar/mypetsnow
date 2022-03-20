@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws | Pets Online Store in Pakistan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--    <link rel="stylesheet" href="/assets/css/mobile.css">-->
+
+</head>
+
+ <body>
+     
+ 
+    <!-- Topbar  -->
+    <header class="w-100">
+        <div class="container">
+            <div class="top-header d-flex justify-content-between">
+                <div class="top-header-left">
+                    <div class="social-list-box d-flex align-items-center mr-auto">
+                        <span>Follow Us</span>
+                        <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-header-right d-flex align-items-center justify-content-end">
+                    <div class="cart-box">
+                        <ul class="list-unstyled mb-0 mr-4">
+                            <li class="cart-main">
+                                <a href="#">
+                                    <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
+                                    <span>0 - Item</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary text-uppercase mr-3">Register</a>
+                    <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand d-inline-block mr-4" href="#">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PETS AND VETS </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">CONTACT </a></li>
+                    </ul>
+                </div>
+                <a class="btn-add-pet d-flex align-items-center text-uppercase animated fadeInRight" href="#">
+                    <div class="add-text">Add Pet</div>
+                    <div class="icon-box position-relative text-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/pages/index.html" title="Home">
+                    <img src="https://www.agentpet.com/img/home-icon.svg" alt="home"></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Pets and Vets</li>
+        </ol>
+    </nav>
+</div>
+<!-- Form to find pets clinic  -->
+<div class="container">
+    <div class="find-vetshop-box">
+        <div class="left-box border-box">
+<div class="left-box-header">
+    <div class="leftbox-header-inner">
+        <h2>Find Pet & Vet Clinic:</h2>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+<!-- Search Form  -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <form action="">
+                <div class="form-group input-group icon-group">
+                    <input type="text" class="form-control" name="search_term" id="" placeholder="Name">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                    <select name="city" id="city" class="form-control form-control-md" onchange="this.form.submit()">
+                    <option value="">Choose City</option>
+                    <option  value="Abbottabad">Abbottabad</option>
+                    <option  value="Badaber">Badaber</option>
+                    <option  value="Beha">Beha</option>
+                    <option  value="Burlington">Burlington</option>
+                    <option  value="Chak 74 JB Thikriwala">Chak 74 JB Thikriwala</option>
+                    <option  value="Dhandrah, Chak 66 JB">Dhandrah, Chak 66 JB</option>
+                    <option  value="Faisalabad">Faisalabad</option>
+                    <option  value="Gujranwala">Gujranwala</option>
+                    <option  value="Hyderabad">Hyderabad</option>
+                    <option  value="Islamabad">Islamabad</option>
+                    <option  value="Karachi">Karachi</option>
+                    <option  value="Khurianwala">Khurianwala</option>
+                    <option  value="Khwazakhela">Khwazakhela</option>
+                    <option  value="Lahore">Lahore</option>
+                    <option  value="Madharian Wala Kalar">Madharian Wala Kalar</option>
+                    <option  value="Malakand">Malakand</option>
+                    <option  value="Mardan">Mardan</option>
+                    <option  value="Mingora">Mingora</option>
+                    <option  value="Multan">Multan</option>
+                    <option  value="Nawaan Graan">Nawaan Graan</option>
+                    <option  value="Peshawar">Peshawar</option>
+                    <option  value="Quetta">Quetta</option>
+                    <option  value="Rahwali">Rahwali</option>
+                    <option  value="Rawalpindi">Rawalpindi</option>
+                    <option  value="Sakhakot">Sakhakot</option>
+                    <option  value="San Francisco">San Francisco</option>
+                    <option  value="Sargodha">Sargodha</option>
+                    <option  value="Shah Faisal Town">Shah Faisal Town</option>
+                    <option  value="Shahderai">Shahderai</option>
+                    <option  value="Sher Palam">Sher Palam</option>
+                    <option  value="Sialkot">Sialkot</option>
+                    <option  value="Swat">Swat</option>
+                    <option  value="Thana">Thana</option>
+                    </select>
+                        </div>
+                    </div>
+<div class="col-sm-4 col-6">
+<div class="form-group checkboxes">
+    <label  class="custom-checkbox dark font-size-sm">
+<input type="checkbox" name="type1" id="Pet Shop" onchange="this.form.submit()" checked="&quote;" checked&quote;>
+<span class="checkmark"></span>
+    <span class="text text-uppercase text-danger">Pet Shop</span>
+    </label>
+</div>
+</div>
+<!-- For vet clinic  -->
+<div class="col-sm-4 col-6">
+    <div class="form-group checkboxes">
+        <label class="custom-checkbox dark font-size-sm">
+            <input type="checkbox"  name="type2"  id="Vet Shop" onchange="this.form.submit()">
+            <span class="checkmark"></span>
+            <span class="text text-uppercase text-danger">Vet Clinic</span>
+        </label>
+    </div>
+</div>
+ </div>
+ </form>
+</div>
+<div class="left-box-body">
+    <div class="result-card-list">
+        <a class="media vet-shop-card" data-markerid="0">
+<div class="media-body">
+    <h5>Zohaib Khan</h5>
+    <div class="star-rating-box">
+        <small></small>
+        <ul class="class-rating-list">
+            <li class="">
+                <i class="fas fa-star"></i>
+            </li>
+            
+            <li class="">
+                <i class="fas fa-star"></i>
+            </li>
+            
+            <li class="">
+                <i class="fas fa-star"></i>
+            </li>
+            
+            <li class="">
+                <i class="fas fa-star"></i>
+            </li>
+            
+            <li class="">
+                <i class="fas fa-star"></i>
+            </li>
+        </ul>
+    </div>
+    <address>Zia Colony Faisalabad,Punjab,Pakistan</address>
+    <p class="time">Phone 03457747744</p>
+</div>
+<div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">                  
+</div>
+ </a>
+ <!-- 2nd shop  -->
+ <a class="media vet-shop-card" data-markerid="1">
+    <div class="media-body">
+        <h5>RAJPUT BIRDS SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Khurianwala, Faisalabad, Punjab, Pakistan</address>
+        <p class="time">Phone 03438700063</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+    </div>
+</a>
+<!-- 3rd shop -->
+<a class="media vet-shop-card" data-markerid="2">
+    <div class="media-body">
+        <h5>REEM PET STORE</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>9-A Shiblee Dr, Block A People&#039;s Colony No 1, Faisalabad, Punjab, Pakistan</address>
+        <p class="time">Phone 03216682313</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- 4th shop  -->
+<a class="media vet-shop-card" data-markerid="3">
+    <div class="media-body">
+        <h5>THE BIRDS SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Sargodha Road, Shadman Town Faisalabad, Punjab, Pakistan</address>
+        <p class="time">Phone 03006611733</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- 5th shop  -->
+<a class="media vet-shop-card" data-markerid="4">
+    <div class="media-body">
+        <h5>TARIQ FISH SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Clock Tower, Faisalabad, Punjab, Pakistan</address>
+        <p class="time">Phone 03007606374</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+         </div>
+</a>
+<!-- 6th shop  -->
+
+<a class="media vet-shop-card" data-markerid="5">
+    <div class="media-body">
+        <h5>PET PLANET</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Faisalabad, Punjab, Pakistan</address>
+        <p class="time">Phone 03218665881</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- 7th shop  -->
+<a class="media vet-shop-card" data-markerid="6">
+    <div class="media-body">
+        <h5>HUSH CAT</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Susan Rd, Dawood Colony, Madina Town, Block Z Madina Town, Faisalabad, Punjab 38860, Pakistan</address>
+        <p class="time">Phone 03226225889</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- 8th shop  -->
+<a class="media vet-shop-card" data-markerid="7">
+    <div class="media-body">
+        <h5>ISLAMI BHAI BIRDS &amp; FEED SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Block D Satellite Town, Gujranwala, Punjab, Pakistan</address>
+        <p class="time">Phone 03446498581</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- 9th shop  -->
+<a class="media vet-shop-card" data-markerid="8">
+    <div class="media-body">
+        <h5>BIRDS COTTAGE</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Malik Sohail Rd, Nawaan Graan, Azad Jammu and Kashmir</address>
+        <p class="time">Phone 03000737373</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 10  -->
+<a class="media vet-shop-card" data-markerid="9">
+    <div class="media-body">
+        <h5>BIRDS PLANET</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Islam Colony Civil Lines, Gujranwala, Punjab, Pakistan</address>
+        <p class="time">
+            Phone 03234657894
+        </p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 11  -->
+<a class="media vet-shop-card" data-markerid="10">
+    <div class="media-body">
+        <h5>A.B PET STORE</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Sialkot Rd, Civil Lines, Gujranwala, Punjab, Pakistan</address>
+        <p class="time">Phone 03216445533</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 12  -->
+<a class="media vet-shop-card" data-markerid="11">
+    <div class="media-body">
+        <h5>SEA WORLD AQUARIUM &amp; FISH SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Abbot Rd, Mohalla Lahori Shah, Sialkot, Punjab, Pakistan</address>
+        <p class="time">Phone 03338606431</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 13  -->
+
+<a class="media vet-shop-card" data-markerid="12">
+    <div class="media-body">
+        <h5>PETS CRAFTS</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Gohadpur, Sialkot, Punjab, Pakistan</address>
+        <p class="time">Phone 03324567560</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 14  -->
+<a class="media vet-shop-card" data-markerid="13">
+    <div class="media-body">
+        <h5>BUY BIRDS SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Pakka Garha, Sialkot, Punjab, Pakistan</address>
+        <p class="time">Phone 03157825328</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 15  -->
+<a class="media vet-shop-card" data-markerid="14">
+    <div class="media-body">
+        <h5>PURRFECT PET SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Near Board Bazar, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
+        <p class="time">Phone 03159934646</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- shop # 16  -->
+<a class="media vet-shop-card" data-markerid="15">
+    <div class="media-body">
+        <h5>THE PETS MALL</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>University Town, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
+        <p class="time">Phone 03479700299</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        
+    </div>
+</a>
+<!-- Shop # 17  -->
+<a class="media vet-shop-card" data-markerid="16">
+    <div class="media-body">
+        <h5>M AYYAN BIRDS POINT</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Art School Rd, Quetta, Balochistan, Pakistan</address>
+        <p class="time">Phone 03101124195</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        </div>
+</a>
+<!-- Shop # 18  -->
+<a class="media vet-shop-card" data-markerid="17">
+    <div class="media-body">
+        <h5>SKY BLUE AQUARIUM SHOP</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Quetta, Balochistan, Pakistan</address>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+        
+    </div>
+</a>
+<!-- Shop # 19 -->
+<a class="media vet-shop-card" data-markerid="18">
+    <div class="media-body">
+        <h5>NATO MARKET</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Quetta, Balochistan, Pakistan</address>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+         </div>
+</a>
+<!-- Shop # 20 -->
+<a class="media vet-shop-card" data-markerid="19">
+    <div class="media-body">
+        <h5>FISH &amp; FISH</h5>
+        <div class="star-rating-box">
+            <small></small>
+            <ul class="star-rating-list">
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+                
+                <li class="">
+                    <i class="fas fa-star"></i>
+                </li>
+            </ul>
+        </div>
+        <address>Jadoon Plaza Phase 2 Rd, Abbottabad, Khyber Pakhtunkhwa, Pakistan</address>
+        <p class="time">Phone 03339353666</p>
+    </div>
+    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+     </div>
+    </a>
+    </div>
+</div>
+ </div>
+ <!-- Map  -->
+ <div class="right-box">
+     <div id="map" class="map"></div>
+ </div>
+</div>
+<!-- Pagination  -->
+<div class="text-center">
+    <ul class="pagination" role="navigation">
+        <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+            <span class="page-link" aria-hidden="true">&lsaquo;</span>
+        </li>
+        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2">2</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=3">3</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=4">4</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=5">5</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=6">6</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=7">7</a></li>
+        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=8">8</a></li>
+        <li class="page-item">
+            <a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+        </li>
+</ul>
+</div>
+</div>
+
+
+<!-- link of js -->
+<script>
+    // js for map 
+var map;
+        function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: new google.maps.LatLng(-33.91722, 151.23064),
+            mapTypeId: 'roadmap',
+            styles: [
+            {
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#f5f5f5"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                {
+                    "visibility": "off"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#616161"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                {
+                    "color": "#f5f5f5"
+                }
+                ]
+            },
+            {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#bdbdbd"
+                }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry.fill",
+                "stylers": [
+                {
+                    "color": "#dedede"
+                }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#eeeeee"
+                }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#e5e5e5"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#9e9e9e"
+                }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#b1b1b1"
+                }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#b1b1b1"
+                }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#616161"
+                }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#9e9e9e"
+                }
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#e5e5e5"
+                }
+                ]
+            },
+            {
+                "featureType": "transit.station",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#eeeeee"
+                }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#c9c9c9"
+                }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#9e9e9e"
+                }
+                ]
+            }
+            ]
+            
+        });
+        // New Array 
+
+        var markers = new Array();
+        // Create marker.
+        var infowindow = new google.maps.InfoWindow();
+
+        var bounds = new google.maps.LatLngBounds();
+            // Create marker.
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.44165410, 73.14233640),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.44165410, 73.14233640),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>ZOHAIB AVIARY</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.49633840, 73.27063890),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.49633840, 73.27063890),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>RAJPUT BIRDS SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.41038480, 73.11316430),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.41038480, 73.11316430),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>REEM PET STORE</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.46332700, 73.08142060),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.46332700, 73.08142060),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>THE BIRDS SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.41941540, 73.08037130),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.41941540, 73.08037130),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>TARIQ FISH SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.45036620, 73.13496050),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.45036620, 73.13496050),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>PET PLANET</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(31.42187540, 73.11753360),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(31.42187540, 73.11753360),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>HUSH CAT</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.16398930, 74.20784400),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.16398930, 74.20784400),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>ISLAMI BHAI BIRDS &amp; FEED SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(33.00968690, 73.80622740),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(33.00968690, 73.80622740),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>BIRDS COTTAGE</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.17698610, 74.19995620),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.17698610, 74.19995620),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>BIRDS PLANET</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.17192310, 74.19775290),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.17192310, 74.19775290),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>A.B PET STORE</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.49702180, 74.53314980),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.49702180, 74.53314980),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>SEA WORLD AQUARIUM &amp; FISH SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.52421610, 74.50677700),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.52421610, 74.50677700),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>PETS CRAFTS</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(32.50646140, 74.50824200),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(32.50646140, 74.50824200),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>BUY BIRDS SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(33.99690260, 71.46691000),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(33.99690260, 71.46691000),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>PURRFECT PET SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(33.99216590, 71.49820520),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(33.99216590, 71.49820520),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>THE PETS MALL</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(30.19157510, 67.01581150),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(30.19157510, 67.01581150),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>M AYYAN BIRDS POINT</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(30.17983980, 66.97497310),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(30.17983980, 66.97497310),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>SKY BLUE AQUARIUM SHOP</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(30.17983980, 66.97497310),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(30.17983980, 66.97497310),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>NATO MARKET</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(34.19021750, 73.23557010),
+                // icon: "img/icons/map-marker.png",
+                icon: {
+                labelOrigin: new google.maps.Point(34.19021750, 73.23557010),
+                    url: "img/map-marker-primary.png"
+                },
+
+                map: map,
+            });
+            bounds.extend(marker.position);
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent('<strong>FISH &amp; FISH</strong><br>');
+                    infowindow.open(map, marker);
+                    map.setZoom(14);
+                    map.setCenter(marker.getPosition());
+                }
+            })(marker));
+            markers.push( marker );
+                        
+             map.fitBounds(bounds);
+            $(".vet-shop-card").on("click",function(){
+            
+                google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+            });
+        }
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

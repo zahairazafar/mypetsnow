@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 $primary-color: #f84646;
 $white-color: #ffffff;
 $orange-red-color: #f72d2d;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,11 +22,11 @@ a {
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.text{
+.text {
   color: $white-color;
 }
 
@@ -40,10 +40,10 @@ button{
       font-weight: 600;
       font-size: 15px;
     }
-    .social-list{
+    .social-list {
       li {
         padding: 0 4px;
-        a{
+        a {
           color: rgba(0, 0, 0, 0.8);
         }
       }
@@ -59,7 +59,7 @@ button{
       margin-right: 10px;
       border-style: none;
     }
-    span{
+    span {
       color: $primary-color;
     }
   }
@@ -82,16 +82,16 @@ button{
   background-image: none;
   border-color: $primary-color;
   border-radius: 0.2rem;
-  &:hover{
+  &:hover {
     color: $white-color;
     background-color: $primary-color;
     border-color: $primary-color;
   }
 }
 
-.navbar{
+.navbar {
   padding: 0.25rem 1rem;
-  .navbar-brand{
+  .navbar-brand {
     padding-top: 0.265625rem;
     padding-bottom: 0.265625rem;
     font-size: 1.5625rem;
@@ -115,24 +115,24 @@ button{
   background-color: $primary-color;
   padding: 6px;
   border-radius: 50%;
-  i{
-    &:before{
-      content:"\f067"
+  i {
+    &:before {
+      content: "\f067";
     }
   }
 }
 
-.nav-link{
+.nav-link {
   color: #404040;
   font-size: 15px;
   transition: all 0.2s ease 0s;
   text-transform: uppercase;
 }
 
-.red-boxes-section{
+.red-boxes-section {
   color: $white-color;
   font-size: 16px;
-  .r-box{
+  .r-box {
     flex: 0 0 25%;
     max-width: 25%;
     padding: 6px 16px;
@@ -143,7 +143,7 @@ button{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    .icon-box{
+    .icon-box {
       width: 70px;
       height: 70px;
       border: 1px solid $white-color;
@@ -154,17 +154,17 @@ button{
       justify-content: center;
       flex: 0 0 70px;
     }
-    .text-box{
+    .text-box {
       padding-left: 24px;
     }
-    .r-box-title{
+    .r-box-title {
       font-size: 22px;
       text-transform: uppercase;
       margin-top: -3px;
       color: $white-color;
       text-decoration: none;
     }
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       left: 0;
@@ -179,7 +179,7 @@ button{
       opacity: 0;
     }
   }
-  p{
+  p {
     margin-bottom: 0;
     color: $white-color;
     font-size: 15px;
@@ -190,11 +190,11 @@ button{
   padding: 47px 0;
 }
 
-.bg-box{
+.bg-box {
   background: black;
   border-radius: 8px;
   padding: 20px;
-  .form-title{
+  .form-title {
     font-size: 30px;
     font-weight: 300;
     color: $white-color;
@@ -203,11 +203,11 @@ button{
   }
 }
 
-.checkboxes{
+.checkboxes {
   padding: 10px 0;
 }
 
-.custom-checkbox{
+.custom-checkbox {
   padding-left: 40px;
   font-size: 18px;
   font-weight: 400;
@@ -218,13 +218,13 @@ button{
       border-radius: 50%;
     }
     &:checked {
-      + .checkmark{
+      + .checkmark {
         background-color: $primary-color;
         border: 1px solid $primary-color;
       }
     }
   }
-  .checkmark{
+  .checkmark {
     width: 24px;
     height: 24px;
     display: block;
@@ -232,7 +232,7 @@ button{
     left: 0;
     top: 2px;
     transition: all 0.2s ease 0s;
-    &::before{
+    &::before {
       content: "";
       width: 8px;
       height: 8px;
@@ -249,7 +249,7 @@ button{
   }
 }
 
-.search-btn{
+.search-btn {
   min-width: 187px;
   height: 50px;
   display: inline-block;
@@ -263,20 +263,20 @@ button{
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.custom-search-button{
+.custom-search-button {
   color: $white-color;
   background-color: $primary-color;
   border-color: $primary-color;
-  &:hover{
+  &:hover {
     background-color: orangered;
     border: none;
   }
 }
 
-
-.relocate-pet-section{
+.relocate-pet-section {
   padding: 40px 0px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.06);
   background-image: url("../images/relocate-bg.jpg");
@@ -286,40 +286,40 @@ button{
   min-height: 450px;
   position: relative;
   z-index: 1;
-  .relocate-section-title{
+  .relocate-section-title {
     font-size: 64px;
     color: #232323;
     margin-bottom: 75px;
-    small{
+    small {
       font-size: 32px;
       padding-left: 25px;
     }
   }
-  .relocate-form-box{
+  .relocate-form-box {
     max-width: 636px;
   }
 }
 
-.relocate-form-box{
+.relocate-form-box {
   border-radius: 4px;
-  button{
+  button {
     background-color: $primary-color;
     border: none;
-    &:hover{
+    &:hover {
       background-color: $orange-red-color;
     }
   }
 }
 
-.featured-pets-section{
+.featured-pets-section {
   padding: 40px 0 20px;
 }
 
-.paw-title-box{
-  .paw-title{
+.paw-title-box {
+  .paw-title {
     font-size: 38px;
     color: #414141;
-    .icon-box{
+    .icon-box {
       display: block;
       width: 100%;
       height: 100%;
@@ -328,7 +328,7 @@ button{
       //margin-top: -8px;
       max-width: 203px;
       position: relative;
-      &:before{
+      &:before {
         content: "";
         display: block;
         width: calc(50% - 18px);
@@ -339,5 +339,28 @@ button{
         position: absolute;
       }
     }
-  }
+  🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|🤍|
+
+
+// Pets & Vets page
+.container{
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+// element.style {
+// }
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
 }
