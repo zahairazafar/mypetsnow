@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
-$primary-color:#001d3d;
+$primary-color: #001d3d;
 $white-color: #ffffff;
 $orange-red-color: #f72d2d;
 
@@ -134,7 +134,7 @@ button {
 .red-boxes-section {
   color: $white-color;
   font-size: 16px;
-  
+
   .r-box {
     flex: 0 0 25%;
     max-width: 25%;
@@ -331,1317 +331,1361 @@ button {
     font-size: 38px;
     color: #414141;
     .icon-box {
-    .featured-pets-icon-box {
-      display: block;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      max-width: 203px;
-      position: relative;
-      &:before {
-        content: "";
+      .featured-pets-icon-box {
         display: block;
-        width: calc(50% - 18px);
-        border-bottom: 1px dashed #414141;
-        opacity: 0.4;
-        left: 0;
-        bottom: 12px;
-        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 203px;
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          width: calc(50% - 18px);
+          border-bottom: 1px dashed #414141;
+          opacity: 0.4;
+          left: 0;
+          bottom: 12px;
+          position: absolute;
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: calc(50% - 18px);
+          border-bottom: 1px dashed #414141;
+          opacity: 0.4;
+          right: 0;
+          bottom: 12px;
+          position: absolute;
+        }
       }
-      &:after {
-        content: "";
-        display: block;
-        width: calc(50% - 18px);
-        border-bottom: 1px dashed #414141;
-        opacity: 0.4;
-        right: 0;
-        bottom: 12px;
-        position: absolute;
+      img {
+        width: 28px;
+        height: 27px;
+        fill: $primary-color;
       }
-    }
-    img {
-      width: 28px;
-      height: 27px;
-      fill: $primary-color;
-    }
-.categories-banner-section {
-  padding: 40px 0 20px;
-  & [class^="col-"] {
-    margin-bottom: 30px;
-  }
-}
-
-.categories-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-}
-
-.bg-pet-home {
-  background-color: #82b1ff !important;
-}
-
-.categories-banner-card {
-  min-height: 185px;
-  padding: 20px;
-  transition: all 0.2s ease 0s;
-  .category-icon {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    max-width: 42%;
-    max-height: 90%;
-  }
-}
-
-.bg-best-food {
-  background-color: #ec82ff !important;
-}
-
-.bg-pet-toys {
-  background-color: #5de88b !important;
-}
-
-.bg-bags {
-  background-color: #e8bc5d !important;
-}
-
-.bg-pet-cage {
-  background-color: #fa8b8b !important;
-}
-
-.bg-medicine {
-  background-color: #30b1ad !important;
-}
-
-.search-map-section {
-  z-index: 3;
-  position: relative;
-  height: 450px;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-  }
-  .contact-form {
-    position: relative;
-    z-index: 3;
-    max-width: 900px;
-    flex: 0 1 900px;
-    padding: 40px 30px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 4px;
-  }
-  .contact-form-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-  .search-form {
-    display: flex;
-    align-items: center;
-    margin: 0px -7px;
-    .col-box {
-      flex: 1 1 auto;
-      padding: 0 7px;
-      margin-bottom: 15px;
-      .text {
-        color: black;
+      .categories-banner-section {
+        padding: 40px 0 20px;
+        & [class^="col-"] {
+          margin-bottom: 30px;
+        }
       }
-    }
-    .form-group {
-      margin-bottom: 0;
-    }
-  }
-  iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: "";
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
 
-.custom-checkbox {
-  position: relative;
-  padding-left: 40px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 400;
-  white-space: nowrap;
-}
+      .categories-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+      }
 
-.has-float-label {
-  overflow: hidden;
-  text-align: left;
-  .form-control {
-    padding-top: 15px;
-  }
-}
+      .bg-pet-home {
+        background-color: #82b1ff !important;
+      }
 
-.buttons-box {
-  .btn-primary {
-    min-width: 97px;
-    height: 50px;
-    display: inline-block;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 16px;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    background-color: $primary-color;
-    text-transform: uppercase;
-  }
-}
+      .categories-banner-card {
+        min-height: 185px;
+        padding: 20px;
+        transition: all 0.2s ease 0s;
+        .category-icon {
+          position: absolute;
+          content: "";
+          right: 0;
+          bottom: 0;
+          max-width: 42%;
+          max-height: 90%;
+        }
+      }
 
-.about-section {
-  padding: 40px 0;
-  background: $white-color;
-  .about-us-row {
-    flex-wrap: nowrap;
-    line-height: 38px;
-  }
-  .btn-box {
-    margin-top: 52px;
-  }
-  .btn {
-    min-width: 187px;
-    text-transform: uppercase;
-  }
-  .btn-primary {
-    color: #fff;
-    background-color: #f84646;
-    border-color: #f84646;
-  }
-}
+      .bg-best-food {
+        background-color: #ec82ff !important;
+      }
 
-.popular-pets-section {
-  padding: 40px 0;
-  text-align: center;
-  font-size: 27px;
-  font-weight: 600;
-  .popular-pets-list {
-    display: flex;
-    margin: 0px -8px;
-    flex-wrap: wrap;
-    a{
-      text-decoration: none;
-    }
-  }
-  .icon-box {
-    width: 175px;
-    height: 171px;
-    border: 1px dashed #f84646;
-    padding: 20px 10px;
-    margin: 0 auto;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $white-color;
-  }
-  .total-count {
-    margin-top: 8px;
-    color: black;
-  }
-}
+      .bg-pet-toys {
+        background-color: #5de88b !important;
+      }
 
-.footer {
-  background-color: #323232;
-  padding: 35px 0 0;
-  color: white;
-  font-size: 18px;
-  .logo-box {
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-  .social-list-box {
-    .footer-social-list {
-      li {
-        padding: 0 4px;
-        margin-bottom: 8px;
+      .bg-bags {
+        background-color: #e8bc5d !important;
+      }
+
+      .bg-pet-cage {
+        background-color: #fa8b8b !important;
+      }
+
+      .bg-medicine {
+        background-color: #30b1ad !important;
+      }
+
+      .search-map-section {
+        z-index: 3;
+        position: relative;
+        height: 450px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          background: rgba(0, 0, 0, 0.4);
+          z-index: 2;
+        }
+        .contact-form {
+          position: relative;
+          z-index: 3;
+          max-width: 900px;
+          flex: 0 1 900px;
+          padding: 40px 30px;
+          margin: 0 auto;
+          background-color: white;
+          border-radius: 4px;
+        }
+        .contact-form-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 36px;
+        }
+        .search-form {
+          display: flex;
+          align-items: center;
+          margin: 0px -7px;
+          .col-box {
+            flex: 1 1 auto;
+            padding: 0 7px;
+            margin-bottom: 15px;
+            .text {
+              color: black;
+            }
+          }
+          .form-group {
+            margin-bottom: 0;
+          }
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          content: "";
+          z-index: 1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      .custom-checkbox {
+        position: relative;
+        padding-left: 40px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      .has-float-label {
+        overflow: hidden;
+        text-align: left;
+        .form-control {
+          padding-top: 15px;
+        }
+      }
+
+      .buttons-box {
+        .btn-primary {
+          min-width: 97px;
+          height: 50px;
+          display: inline-block;
+          font-weight: 700;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          user-select: none;
+          border: 1px solid transparent;
+          font-size: 16px;
+          border-radius: 0.25rem;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          background-color: $primary-color;
+          text-transform: uppercase;
+        }
+      }
+
+      .about-section {
+        padding: 40px 0;
+        background: $white-color;
+        .about-us-row {
+          flex-wrap: nowrap;
+          line-height: 38px;
+        }
+        .btn-box {
+          margin-top: 52px;
+        }
+        .btn {
+          min-width: 187px;
+          text-transform: uppercase;
+        }
+        .btn-primary {
+          color: #fff;
+          background-color: #f84646;
+          border-color: #f84646;
+        }
+      }
+
+      .popular-pets-section {
+        padding: 40px 0;
+        text-align: center;
+        font-size: 27px;
+        font-weight: 600;
+        .popular-pets-list {
+          display: flex;
+          margin: 0px -8px;
+          flex-wrap: wrap;
+          a {
+            text-decoration: none;
+          }
+        }
+        .icon-box {
+          width: 175px;
+          height: 171px;
+          border: 1px dashed #f84646;
+          padding: 20px 10px;
+          margin: 0 auto;
+          border-radius: 50%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $white-color;
+        }
+        .total-count {
+          margin-top: 8px;
+          color: black;
+        }
+      }
+
+      .footer {
+        background-color: #323232;
+        padding: 35px 0 0;
+        color: white;
+        font-size: 18px;
+        .logo-box {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+        .social-list-box {
+          .footer-social-list {
+            li {
+              padding: 0 4px;
+              margin-bottom: 8px;
+              a {
+                color: $white-color;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .section-title {
+          .list-title {
+            margin-bottom: 12px;
+          }
+        }
+        .menu-list {
+          margin-bottom: 35px;
+          a {
+            font-size: 1.125rem;
+            opacity: 0.6;
+            padding: 3px 0;
+            display: block;
+            text-decoration: none;
+          }
+        }
         a {
-          color: $white-color;
+          color: white;
+          transition: all 0.2s ease 0s;
           text-decoration: none;
+        }
+        .copyright-box {
+          text-align: right;
+        }
+        .small-link-list {
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          li {
+            position: relative;
+            a {
+              padding: 0 16px;
+              font-size: 0.8125rem;
+              text-transform: uppercase;
+              font-weight: 600;
+              text-decoration: none;
+            }
+            &:after {
+              content: "|";
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .footer-input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        .form-control {
+          height: 43px;
+          border-radius: 20px;
+          font-size: 16px !important;
+          line-height: 1.2;
+        }
+      }
+
+      .input-group-append {
+        margin-left: -1px;
+      }
+
+      .footer-input-group {
+        .btn {
+          height: 43px;
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.2;
+        }
+      }
+
+      .btn-outline-white {
+        color: $white-color;
+        background-color: transparent;
+        background-image: none;
+        border-color: $white-color;
+      }
+
+      .footer-social-list {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 0 0;
+        font-weight: 600;
+        flex-wrap: wrap;
+      }
+      // <------------------------------Contact US-------------------------------------------------->
+
+      @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+      .contact3 {
+        font-family: "Montserrat", sans-serif;
+        color: #8d97ad;
+        font-weight: 300;
+      }
+
+      .contact3 h1,
+      .contact3 h2,
+      .contact3 h3,
+      .contact3 h4,
+      .contact3 h5,
+      .contact3 h6 {
+        color: #3e4555;
+      }
+
+      .contact3 .font-weight-medium {
+        font-weight: 500;
+      }
+
+      .contact3 .card-shadow {
+        -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+      }
+
+      .contact3 .btn-danger-gradiant {
+        background: #ff4d7e;
+        background: -webkit-linear-gradient(
+          legacy-direction(to right),
+          #ff4d7e 0%,
+          #ff6a5b 100%
+        );
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#ff4d7e),
+          to(#ff6a5b)
+        );
+        background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+        background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+        background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+      }
+
+      .contact3 .btn-danger-gradiant:hover {
+        background: #ff6a5b;
+        background: -webkit-linear-gradient(
+          legacy-direction(to right),
+          #ff6a5b 0%,
+          #ff4d7e 100%
+        );
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#ff6a5b),
+          to(#ff4d7e)
+        );
+        background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+        background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+        background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+      }
+      // <----------------------------------------Pets & Vets ---------------------------------------->
+      // .breadcrumb {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   list-style: none;
+      //   border-radius: 0.25rem;
+      // }
+      .breadcrumb {
+        font-size: 0.875rem;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        border-radius: 0.25rem;
+        color: #414141;
+        line-height: 0;
+        padding: 18px 0px !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 0px !important;
+        background: transparent !important;
+      }
+      ol,
+      ul,
+      dl {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      ol {
+        display: block;
+        list-style-type: decimal;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+      }
+      .breadcrumb .breadcrumb-item {
+        margin-bottom: 10px;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 1.4;
+        display: flex;
+        align-items: center;
+      }
+      .breadcrumb .breadcrumb-item + .breadcrumb-item {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+      .breadcrumb-item.active {
+        color: #6c757d;
+      }
+      .breadcrumb-item + .breadcrumb-item {
+        padding-left: 0.5rem;
+      }
+      li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .find-vetshop-box {
+        display: flex;
+        .left-box {
+          flex: 0 0 410px;
+          max-width: 410px;
+          padding: 18px;
+          margin-right: 15px;
+        }
+      }
+
+      .border-box {
+        background: #ffffff;
+        border-radius: 6px;
+        border: 1px solid #eaeaea;
+      }
+      .find-vetshop-box .left-box .leftbox-header-inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .find-vetshop-box .left-box .leftbox-header-inner .box-title {
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin-right: auto;
+        margin-bottom: 0px;
+      }
+      h2 {
+        margin-bottom: 0.5rem;
+        font-family: inherit;
+        font-weight: 700;
+        line-height: 1.2;
+        color: inherit;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .input-group.icon-group {
+        position: relative;
+      }
+      .input-group.icon-group .form-control {
+        border-radius: 4px;
+        border-top-right-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        padding-right: 42px;
+      }
+      .input-group > .form-control,
+      .input-group > .custom-select,
+      .input-group > .custom-file {
+        position: relative;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+      }
+      .input-group .form-control {
+        height: 43px;
+        border-radius: 20px;
+        font-size: 16px !important;
+        line-height: 1.2;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        height: calc(51px + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #495057;
+        color: #464646 !important;
+        appearance: none !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+      .input-group.icon-group .btn {
+        border-radius: 4px;
+        color: #404040;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+      }
+      .input-group .btn {
+        height: 43px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      .btn-link {
+        font-weight: 400;
+        background-color: transparent;
+      }
+      .btn {
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      button,
+      html [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input {
+        overflow: visible;
+      }
+      button {
+        writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-indent: 0px;
+        text-shadow: none;
+        align-items: flex-start;
+      }
+      .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .align-items-center {
+        align-items: center !important;
+      }
+      @media (min-width: 576px) {
+        .col-sm-12 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      .col-sm-12 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      select.form-control {
+        background-image: url(../img/caret-down-black.svg);
+        background-position: center right 15px;
+        background-repeat: no-repeat;
+        padding-right: 35px;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.5;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        font-size: 18px !important;
+        color: #464646 !important;
+        appearance: none !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+      }
+      .form-control-md {
+        height: 43px !important;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      input,
+      button,
+      select,
+      optgroup,
+      textarea {
+        margin: 0;
+        font-family: inherit;
+      }
+      select:not(:-internal-list-box) {
+        overflow: visible !important;
+      }
+      select {
+        writing-mode: horizontal-tb !important;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: start;
+        align-items: center;
+        white-space: pre;
+        -webkit-rtl-ordering: logical;
+      }
+      // @media (min-width: 576px)
+      // {.col-sm-4 {
+      //     flex: 0 0 33.3333333333%;
+      //     max-width: 33.3333333333%;
+      // }}
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .find-vetshop-box .custom-checkbox {
+        padding-left: 32px;
+      }
+      label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+      .font-size-sm {
+        font-size: 0.9375rem !important;
+      }
+      .custom-checkbox {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+      .custom-checkbox input {
+        display: none;
+      }
+      button,
+      input {
+        overflow: visible;
+      }
+      input,
+      button,
+      select,
+      optgroup,
+      textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      input {
+        text-rendering: auto;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: start;
+        -webkit-rtl-ordering: logical;
+      }
+      input[type="checkbox" i] {
+        background-color: initial;
+        cursor: default;
+        appearance: auto;
+        border: initial;
+      }
+      .custom-checkbox input:checked + .checkmark {
+        background-color: #f84646;
+        border: 1px solid #f84646;
+      }
+      .custom-checkbox .checkmark {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        border: 1px solid #ffffff;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        transition: all 0.2s ease 0s;
+      }
+      .font-size-sm > .checkmark {
+        top: -1px !important;
+      }
+      .text-uppercase {
+        text-transform: uppercase !important;
+      }
+      // @media (min-width: 576px)
+      // {.col-sm-4 {
+      //     flex: 0 0 33.3333333333%;
+      //     max-width: 33.3333333333%;
+      // }}
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      .find-vetshop-box .left-box .left-box-body {
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        margin: 0px -18px;
+      }
+      .find-vetshop-box .result-card-list {
+        max-height: 665px;
+      }
+      .mCustomScrollbar {
+        -ms-touch-action: pinch-zoom;
+        touch-action: pinch-zoom;
+      }
+      element.style {
+        max-height: 665px;
+        position: relative;
+        overflow: hidden;
+      }
+      .mCustomScrollBox {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        max-width: 100%;
+        outline: 0;
+        direction: ltr;
+      }
+      element.style {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .find-vet-shop-box .result-card-list .mCSB_container {
+        margin-right: 0px;
+      }
+      .mCSB_container {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+      }
+      a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      .media {
+        display: flex;
+      }
+      .vet-shop-card {
+        padding: 10px 18px 10px 24px;
+        font-size: 0.9rem;
+        color: rgba(64, 64, 64, 0.6);
+        align-items: center !important;
+      }
+      .vet-shop-card .media-body {
+        padding-right: 10px;
+      }
+      .media-body {
+        flex: 1;
+      }
+      .vet-shop-card h5 {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #404040;
+        line-height: 1.2;
+        font-family: inherit;
+      }
+      .star-rating-box {
+        display: flex;
+        align-items: center;
+        color: #e7711b;
+        font-size: 0.9;
+      }
+      small,
+      .small {
+        font-size: 80%;
+        font-weight: 400;
+      }
+      .star-rating-box .star-rating-list {
+        list-style: none;
+        padding: 0px 5px;
+        margin: 0px;
+        color: #d4d4d4;
+        font-size: 0.6rem;
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+      }
+      .star-rating-box .star-rating-list li {
+        padding: 0px 2px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      user agent stylesheet li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      .fa,
+      .fas {
+        font-weight: 900;
+      }
+      .fa,
+      .far,
+      .fas {
+        font-family: "Font Awesome 5 Free";
+      }
+      .fa,
+      .fab,
+      .fal,
+      .far,
+      .fas {
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+      }
+      .fa,
+      .fas {
+        font-weight: 900;
+      }
+      .fa,
+      .far,
+      .fas {
+        font-family: "Font Awesome 5 Free";
+      }
+      .vet-shop-card address {
+        display: block;
+        margin-bottom: 2px;
+      }
+      address {
+        font-style: normal;
+        line-height: inherit;
+      }
+      .vet-shop-card p {
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 0;
+      }
+      element.style {
+        background-image: url(https://www.agentpet.com/img/no-image2.png);
+      }
+      .vet-shop-card .image-box {
+        flex: 0 0 80px;
+        max-width: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100px;
+        background-position: center center;
+        height: 80px;
+      }
+      .vet-shop-card + .vet-shop-card {
+        border-top: 1px solid #dddddd;
+      }
+      element.style {
+        display: block;
+      }
+      .mCSB_scrollTools,
+      .mCSB_scrollTools .mCSB_buttonDown,
+      .mCSB_scrollTools .mCSB_buttonLeft,
+      .mCSB_scrollTools .mCSB_buttonRight,
+      .mCSB_scrollTools .mCSB_buttonUp,
+      .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      }
+      .mCSB_scrollTools {
+        position: absolute;
+        width: 16px;
+        height: auto;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.75;
+      }
+      .mCSB_scrollTools .mCSB_draggerContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: auto;
+      }
+      element.style {
+        position: absolute;
+        min-height: 30px;
+        display: block;
+        height: 194px;
+        max-height: 655px;
+        top: 0px;
+      }
+      .mCSB_scrollTools .mCSB_dragger {
+        cursor: pointer;
+        width: 100%;
+        z-index: 1;
+      }
+      .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        position: relative;
+        width: 4px;
+        height: 100%;
+        margin: 0 auto;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        border-radius: 16px;
+        text-align: center;
+      }
+      .mCSB_draggerContainer .mCSB_dragger_bar {
+        background-color: #999999 !important;
+      }
+      .mCSB_dragger_bar {
+        line-height: 30px;
+      }
+      .mCSB_draggerContainer .mCSB_draggerRail {
+        background-color: transparent !important;
+      }
+      // .mCSB_scrollTools .mCSB_draggerRail {
+      //   background-color: #000;
+      //   background-color: rgba(0,0,0,.4);
+      //   filter: "alpha(opacity=40)";
+      //   -ms-filter: "alpha(opacity=40)";
+      // }
+      .mCSB_scrollTools .mCSB_draggerRail {
+        width: 2px;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 16px;
+      }
+      element-style {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .find-vetshop-box .map {
+        width: 100%;
+        height: 870px;
+        z-index: 1;
+      }
+      element.style {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(229, 227, 223);
+      }
+      element.style {
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        border-width: 0px;
+        margin: 0px;
+      }
+
+      .gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .draggable-false {
+        background: none transparent;
+        display: block;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        text-transform: none;
+        appearance: none;
+        position: absolute;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1000002;
+        outline-offset: 3px;
+        right: 0px;
+        bottom: 0px;
+        transform: translateX(100%);
+      }
+      .map-styling {
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        border-width: 0px;
+        margin: 0px;
+        cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+        touch-action: pan-x pan-y;
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        transform: translate(0px, 0px);
+      }
+
+      .find-vetshop-box .right-box {
+        flex: 1 1 auto;
+      }
+      .find-vetshop-box .map {
+        width: 100%;
+        height: 870px;
+        z-index: 1;
+      }
+      .text-center {
+        text-align: center !important;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .pagination {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+        border-radius: 0.25rem;
+      }
+      ol,
+      ul,
+      dl {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      ul {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+      }
+      li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+      }
+      .page-item.disabled .page-link {
+        color: #6c757d;
+        pointer-events: none;
+        cursor: auto;
+        background-color: #fff;
+        border-color: #dee2e6;
+      }
+      .page-item:first-child .page-link {
+        margin-left: 0;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+      .page-link {
+        position: relative;
+        display: block;
+        padding: 0.5rem 0.75rem;
+        line-height: 1.25;
+        border: 1px solid #dee2e6;
+      }
+      .page-link:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      .page-item:last-child .page-link {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+      }
+
+      // <------------------------------------Add pet ----------------------------------------------->
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        font-family: Open Sans;
+      }
+      body {
+        background: hsl(86, 85%, 95%);
+      }
+
+      /*--------------------
+Buttons
+--------------------*/
+      .btn {
+        display: block;
+        background: hsl(86, 76%, 71%);
+        color: hsl(0, 0, 100);
+        text-decoration: none;
+        margin: 20px 0;
+        padding: 15px 15px;
+        border-radius: 5px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 0.2s ease-in-out;
+          box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0),
+            0 3px 3px hsla(0, 0, 0, 0.2);
+          border-radius: 5px;
+        }
+
+        &:hover::after {
+          background: hsla(0, 0, 0, 0.1);
+          box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+        }
+      }
+      .btn-social {
+        padding-left: 64px;
+        position: relative;
+        z-index: 1;
+
+        .fa {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          width: 50px;
+          height: 100%;
+          text-align: center;
+          background: hsla(0, 0, 0, 0.1);
+          line-height: 3.2;
+          border-radius: 5px 0 0 5px;
+        }
+      }
+      .btn-facebook {
+        background-color: hsl(221, 44%, 41%);
+      }
+      .btn-twitter {
+        background-color: hsl(206, 82%, 63%);
+      }
+      .btn-google {
+        background-color: hsl(7, 71%, 55%);
+      }
+      .btn-linkedin {
+        background-color: hsl(196, 100%, 43%);
+      }
+
+      /*--------------------
+Form
+--------------------*/
+      .form {
+        fieldset {
+          border: none;
+          padding: 0;
+          margin: 20px 0;
+          position: relative;
+
+          input {
+            width: 100%;
+            height: 48px;
+            color: hsl(0, 0, 20);
+            padding: 15px 40px 15px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none !important;
+            border: 1px solid hsla(0, 0, 0, 0.3);
+            box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+            vertical-align: top;
+          }
+        }
+
+        button {
+          width: 100%;
+          outline: none !important;
+          background: linear-gradient(
+            -5deg,
+            hsl(86, 61%, 44%),
+            hsl(86, 65%, 54%)
+          );
+          border: none;
+          text-transform: uppercase;
+          font-weight: bold;
+          box-shadow: 0 3px 0px hsla(86, 21%, 44%, 0.2);
+          text-shadow: 0 2px 3px hsla(0, 0, 0, 0.2);
+        }
+      }
+
+      /*--------------------
+Signup
+--------------------*/
+      .signup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 800px;
+        background: hsl(0, 0, 100);
+        border-radius: 10px;
+        box-shadow: 0 3px 25px hsla(0, 0, 0, 0.2);
+        overflow: hidden;
+        display: flex;
+      }
+
+      .signup-connect,
+      .signup-classic {
+        width: 50%;
+        padding: 30px 50px;
+      }
+
+      .signup-connect {
+        background: linear-gradient(
+          134deg,
+          hsl(44, 96%, 65%),
+          hsl(34, 95%, 45%)
+        );
+        color: hsl(0, 0, 100);
+
+        h1 {
+          font-size: 30px;
+          margin-top: 10px;
+          margin-bottom: 40px;
+          text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+        }
+      }
+
+      .signup-classic {
+        h2 {
+          font-size: 16px;
+          font-weight: normal;
+          margin-top: 23px;
+          margin-bottom: 43px;
+          text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+        }
+
+        fieldset::after {
+          content: "\f007";
+          font-family: FontAwesome;
+          position: absolute;
+          right: 15px;
+          top: 17px;
+          z-index: 2;
+          width: 20px;
+          color: hsla(0, 0, 0, 0.2);
+          text-align: center;
+        }
+
+        fieldset.email::after {
+          content: "\f0e0";
+        }
+
+        fieldset.password::after {
+          content: "\f023";
         }
       }
     }
   }
-  .section-title {
-    .list-title {
-      margin-bottom: 12px;
-    }
-  }
-  .menu-list {
-    margin-bottom: 35px;
-    a {
-      font-size: 1.125rem;
-      opacity: 0.6;
-      padding: 3px 0;
-      display: block;
-      text-decoration: none;
-    }
-  }
-  a {
-    color: white;
-    transition: all 0.2s ease 0s;
-    text-decoration: none;
-  }
-  .copyright-box {
-    text-align: right;
-  }
-  .small-link-list {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    li {
-      position: relative;
-      a {
-        padding: 0 16px;
-        font-size: 0.8125rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-decoration: none;
-      }
-      &:after {
-        content: "|";
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
-  }
 }
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.footer-input-group {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: 100%;
-  .form-control {
-    height: 43px;
-    border-radius: 20px;
-    font-size: 16px !important;
-    line-height: 1.2;
-  }
-}
-
-.input-group-append {
-  margin-left: -1px;
-}
-
-.footer-input-group {
-  .btn {
-    height: 43px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-}
-
-.btn-outline-white {
-  color: $white-color;
-  background-color: transparent;
-  background-image: none;
-  border-color: $white-color;
-}
-
-.footer-social-list {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 0;
-  font-weight: 600;
-  flex-wrap: wrap;
-}
-// <------------------------------Contact US-------------------------------------------------->
-
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
-.contact3 {
-  font-family: "Montserrat", sans-serif;
-  color: #8d97ad;
-  font-weight: 300;
-}
-
-.contact3 h1,
-.contact3 h2,
-.contact3 h3,
-.contact3 h4,
-.contact3 h5,
-.contact3 h6 {
-  color: #3e4555;
-}
-
-.contact3 .font-weight-medium {
-  font-weight: 500;
-}
-
-.contact3 .card-shadow {
-  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-}
-
-.contact3 .btn-danger-gradiant {
-  background: #ff4d7e;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
-  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
-}
-
-.contact3 .btn-danger-gradiant:hover {
-  background: #ff6a5b;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
-  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
-}
-<----------------------------------------Pets & Vets ---------------------------------------->
-// .breadcrumb {
-//   display: flex;
-//   flex-wrap: wrap;
-//   list-style: none;
-//   border-radius: 0.25rem;
-// }
-.breadcrumb {
-  font-size: 0.875rem;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  border-radius: 0.25rem;
-  color: #414141;
-  line-height: 0;
-  padding: 18px 0px !important;
-  padding-bottom: 8px !important;
-  margin-bottom: 0px !important;
-  background: transparent !important;
-}
-ol, ul, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-.breadcrumb .breadcrumb-item {
-  margin-bottom: 10px;
-  max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  line-height: 1.4;
-  display: flex;
-  align-items: center;
-}
-.breadcrumb .breadcrumb-item + .breadcrumb-item {
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
-.breadcrumb-item.active {
-  color: #6c757d;
-}
-.breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem;
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.find-vetshop-box {
-  display: flex;
-}
-.find-vetshop-box .left-box {
-  flex: 0 0 410px;
-  max-width: 410px;
-  padding: 18px;
-  margin-right: 15px;
-}
-.border-box {
-  background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #eaeaea;
-}
-.find-vetshop-box .left-box .leftbox-header-inner {
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-}
-.find-vetshop-box .left-box .leftbox-header-inner .box-title {
-  font-size: 1.375rem;
-  font-weight: 600;
-  margin-right: auto;
-  margin-bottom: 0px;
-}
- h2 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.2;
-  color: inherit;
-}
-.form-group {
-  margin-bottom: 1rem;
-}
-.input-group {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: 100%;
-  border-radius: 20px;
-}
-.input-group.icon-group {
-  position: relative;
-}
-.input-group.icon-group .form-control {
-  border-radius: 4px;
-  border-top-right-radius: 4px !important;
-  border-bottom-right-radius: 4px !important;
-  padding-right: 42px;
-}
-.input-group > .form-control, .input-group > .custom-select, .input-group > .custom-file {
-  position: relative;
-  flex: 1 1 auto;
-  width: 1%;
-  margin-bottom: 0;
-}
-.input-group .form-control {
-  height: 43px;
-  border-radius: 20px;
-  font-size: 16px !important;
-  line-height: 1.2;
-}
-.form-control{
-  display: block;
-    width: 100%;
-    height: calc(51px + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: #495057;
-    color: #464646 !important;
-    appearance: none !important;
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-.input-group.icon-group .btn {
-  border-radius: 4px;
-  color: #404040;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
-.input-group .btn {
-  height: 43px;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.btn-link {
-  font-weight: 400;
-  background-color: transparent;
-}
-.btn {
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-button, html [type="button"], [type="reset"], [type="submit"] {
-  -webkit-appearance: button;
-}
-button, select {
-  text-transform: none;
-}
-button, input {
-  overflow: visible;
-}
-button{
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  letter-spacing: normal;
-    word-spacing: normal;
-    text-indent: 0px;
-    text-shadow: none;
-    align-items: flex-start;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.align-items-center {
-  align-items: center !important;
-}
-@media (min-width: 576px)
-{.col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}}
-.col-sm-12{
-  position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.form-group {
-  margin-bottom: 1rem;
-}
-select.form-control {
-  background-image: url(../img/caret-down-black.svg);
-  background-position: center right 15px;
-  background-repeat: no-repeat;
-  padding-right: 35px;
-}
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  line-height: 1.5;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  font-size: 18px !important;
-    color: #464646 !important;
-    appearance: none !important;
-    background-color: rgba(255, 255, 255, 0.9) !important;
-}
-.form-control-md {
-  height: 43px !important;
-}
-button, select {
-  text-transform: none;
-}
-input, button, select, optgroup, textarea {
-  margin: 0;
-  font-family: inherit;
-}
-  select:not(:-internal-list-box) {
-    overflow: visible !important;
-}
-select{
-  writing-mode: horizontal-tb !important;
-  text-indent: 0px;
-    text-shadow: none;
-    text-align: start;
-    align-items: center;
-    white-space: pre;
-    -webkit-rtl-ordering: logical;
-
-}
-@media (min-width: 576px)
-{.col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-}}
-.form-group {
-  margin-bottom: 1rem;
-}
-.find-vetshop-box .custom-checkbox {
-  padding-left: 32px;
-}
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-.font-size-sm {
-  font-size: 0.9375rem !important;
-}
-.custom-checkbox {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 400;
-  white-space: nowrap;
-}
-.custom-checkbox input {
-  display: none;
-}
-button, input {
-  overflow: visible;
-}
-input, button, select, optgroup, textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-input{
-  text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: start;
-    -webkit-rtl-ordering: logical;
-}
-input[type="checkbox" i] {
-  background-color: initial;
-  cursor: default;
-  appearance: auto;
-  border: initial;
-}
-.custom-checkbox input:checked + .checkmark {
-  background-color: #f84646;
-  border: 1px solid #f84646;
-}
-.custom-checkbox .checkmark {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  transition: all 0.2s ease 0s;
-}
-.font-size-sm > .checkmark {
-  top: -1px !important;
-}
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-@media (min-width: 576px)
-{.col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-}}
-.form-group {
-  margin-bottom: 1rem;
-}
-.find-vetshop-box .left-box .left-box-body {
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  margin: 0px -18px;
-}
-.find-vetshop-box .result-card-list {
-  max-height: 665px;
-}
-.mCustomScrollbar {
-  -ms-touch-action: pinch-zoom;
-  touch-action: pinch-zoom;
-}
-element.style {
-  max-height: 665px;
-  position: relative;
-  overflow: hidden;
-}
-.mCustomScrollBox {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  max-width: 100%;
-  outline: 0;
-  direction: ltr;
-}
-element.style {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.find-vet-shop-box .result-card-list .mCSB_container {
-  margin-right: 0px;
-}
-.mCSB_container {
-  overflow: hidden;
-  width: auto;
-  height: auto;
-}
-a:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none;
-}
-.media {
-  display: flex;
-}
-.vet-shop-card {
-  padding: 10px 18px 10px 24px;
-  font-size: 0.9rem;
-  color: rgba(64, 64, 64, 0.6);
-  align-items: center !important;
-}
-.vet-shop-card .media-body {
-  padding-right: 10px;
-}
-.media-body {
-  flex: 1;
-}
-.vet-shop-card h5 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  margin-bottom: 0px;
-  color: #404040;
-  line-height: 1.2;
-  font-family: inherit;
-}
-.star-rating-box {
-  display: flex;
-  align-items: center;
-  color: #e7711b;
-  font-size: 0.9;
-}
-small, .small {
-  font-size: 80%;
-  font-weight: 400;
-}
-.star-rating-box .star-rating-list {
-  list-style: none;
-  padding: 0px 5px;
-  margin: 0px;
-  color: #d4d4d4;
-  font-size: 0.6rem;
-  display: flex;
-  align-items: center;
-  margin-top: 2px;
-}
-.star-rating-box .star-rating-list li {
-  padding: 0px 2px;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-user agent stylesheet
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-.fa, .fas {
-  font-weight: 900;
-}
-.fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-.fa, .fab, .fal, .far, .fas {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-.fa, .fas {
-  font-weight: 900;
-}
-.fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-.vet-shop-card address {
-  display: block;
-  margin-bottom: 2px;
-}
-address {
-  font-style: normal;
-  line-height: inherit;
-}
-.vet-shop-card p {
-  margin-bottom: 0px;
-}
-p {
-  margin-top: 0;
-}
-element.style {
-  background-image: url(https://www.agentpet.com/img/no-image2.png);
-}
-.vet-shop-card .image-box {
-  flex: 0 0 80px;
-  max-width: 80px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 100px;
-  background-position: center center;
-  height: 80px;
-}
-.vet-shop-card + .vet-shop-card {
-  border-top: 1px solid #dddddd;
-}
-element.style {
-  display: block;
-}
-.mCSB_scrollTools, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
-}
-.mCSB_scrollTools {
-  position: absolute;
-  width: 16px;
-  height: auto;
-  left: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: .75;
-}
-.mCSB_scrollTools .mCSB_draggerContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: auto;
-}
-element.style {
-  position: absolute;
-  min-height: 30px;
-  display: block;
-  height: 194px;
-  max-height: 655px;
-  top: 0px;
-}
-.mCSB_scrollTools .mCSB_dragger {
-  cursor: pointer;
-  width: 100%;
-  z-index: 1;
-}
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  position: relative;
-  width: 4px;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  text-align: center;
-}
-.mCSB_draggerContainer .mCSB_dragger_bar {
-  background-color: #999999 !important;
-}
-.mCSB_dragger_bar{
-  line-height: 30px;
-}
-.mCSB_draggerContainer .mCSB_draggerRail {
-  background-color: transparent !important;
-}
-// .mCSB_scrollTools .mCSB_draggerRail {
-//   background-color: #000;
-//   background-color: rgba(0,0,0,.4);
-//   filter: "alpha(opacity=40)";
-//   -ms-filter: "alpha(opacity=40)";
-// }
-.mCSB_scrollTools .mCSB_draggerRail {
-  width: 2px;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 16px;
-}
-element-style{
-  position: relative;
-  overflow: hidden;
-}
-
-.find-vetshop-box .map {
-width: 100%;
-height: 870px;
-z-index: 1;
-}
-element.style {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: rgb(229, 227, 223);
-}
-element.style {
-  position: absolute;
-  z-index: 0;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  border-width: 0px;
-  margin: 0px;
-}
-
-.gm-style {
-  font: 400 11px Roboto, Arial, sans-serif;
-  text-decoration: none;
-}
-.draggable-false{
-  background: none transparent;
-    display: block;
-    border: none;
-    margin: 0px;
-    padding: 0px;
-    text-transform: none;
-    appearance: none;
-    position: absolute;
-    cursor: pointer;
-    user-select: none;
-    z-index: 1000002;
-    outline-offset: 3px;
-    right: 0px;
-    bottom: 0px;
-    transform: translateX(100%);
-
-}
-.map-styling{
-  position: absolute;
-    z-index: 0;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    border-width: 0px;
-    margin: 0px;
-    cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
-    touch-action: pan-x pan-y;
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    transform: translate(0px, 0px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.find-vetshop-box .right-box {
-  flex: 1 1 auto;
-}
-.find-vetshop-box .map {
-  width: 100%;
-  height: 870px;
-  z-index: 1;
-}
-.text-center {
-  text-align: center !important;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-.pagination {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-  border-radius: 0.25rem;
-}
-ol, ul, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-ul{
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-.page-item.disabled .page-link {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: auto;
-  background-color: #fff;
-  border-color: #dee2e6;
-}
-.page-item:first-child .page-link {
-  margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-.page-link {
-  position: relative;
-  display: block;
-  padding: 0.5rem 0.75rem;
-  line-height: 1.25;
-  border: 1px solid #dee2e6;
-}
-.page-link:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-a{
-  text-decoration: none;
-}
-.page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-}
-
-<------------------------------------Add pet ----------------------------------------------->
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  font-family: Open Sans;
-}
-body {
-  background: hsl(86, 85%, 95%);
-}
-
-
-/*--------------------
-Buttons
---------------------*/
-.btn {
-  display: block;
-  background: hsl(86, 76%, 71%);
-  color: hsl(0, 0, 100);
-  text-decoration: none;
-  margin: 20px 0;
-  padding: 15px 15px;
-  border-radius: 5px;
-  position: relative;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all .2s ease-in-out;
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
-    border-radius: 5px;
-  }
-  
-  &:hover::after {
-    background: hsla(0, 0, 0, 0.1);
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
-  }
-  
-} 
-.btn-social {
-  padding-left: 64px;
-  position: relative;
-  z-index: 1;
-  
-  .fa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 50px;
-    height: 100%;
-    text-align: center;
-    background: hsla(0, 0, 0, 0.1);
-    line-height: 3.2;
-    border-radius: 5px 0 0 5px;
-  }
-  
-}
-.btn-facebook {
-  background-color: hsl(221, 44%, 41%);
-}
-.btn-twitter {
-  background-color: hsl(206, 82%, 63%);
-}
-.btn-google {
-  background-color: hsl(7, 71%, 55%); 
-}
-.btn-linkedin {
-  background-color: hsl(196, 100%, 43%);
-}
-
-
-/*--------------------
-Form
---------------------*/
-.form {
-  
-  fieldset {
-    border: none;
-    padding: 0;
-    margin: 20px 0;
-    position: relative;
-    
-    input {
-      width: 100%;
-      height: 48px;
-      color: hsl(0, 0, 20);
-      padding: 15px 40px 15px 15px;
-      border-radius: 5px;
-      font-size: 14px;
-      outline: none!important;
-      border: 1px solid hsla(0, 0, 0, 0.3);
-      box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
-      vertical-align: top;
-    }
-     
-  }
-  
-  button {
-    width: 100%;
-    outline: none!important;
-    background: linear-gradient(-5deg, hsl(86, 61%, 44%), hsl(86, 65%, 54%));
-    border: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: 0 3px 0px hsla(86, 21%, 44%, 0.2);
-    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.2);
-  }
-  
-}
-
-
-
-/*--------------------
-Signup
---------------------*/
-.signup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 800px;
-  background: hsl(0, 0, 100);
-  border-radius: 10px;
-  box-shadow: 0 3px 25px hsla(0, 0, 0, 0.2);
-  overflow: hidden;
-  display: flex;
-}
-
-.signup-connect,
-.signup-classic
-{
-  width: 50%;
-  padding: 30px 50px;
-}
-
-.signup-connect {
-  background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
-  color: hsl(0, 0, 100);
-  
-  h1 {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
-  }
-  
-}
-
-.signup-classic {
-  
-  h2 {
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 23px;
-    margin-bottom: 43px;
-    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
-  }
-  
-  fieldset::after {
-    content: '\f007';
-    font-family: FontAwesome;
-    position: absolute;
-    right: 15px;
-    top: 17px;
-    z-index: 2;
-    width: 20px;
-    color: hsla(0, 0, 0, .2);
-    text-align: center;
-  }
-  
-  fieldset.email::after {
-    content: '\f0e0';
-  }
-  
-  fieldset.password::after {
-    content: '\f023';
-  }
-  
-}
-
-
