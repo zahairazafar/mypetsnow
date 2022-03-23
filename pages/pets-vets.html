@@ -9,74 +9,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/slick/slick.css">
     <link rel="stylesheet" href="../assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <!--    <link rel="stylesheet" href="/assets/css/mobile.css">-->
 
 </head>
 
- <body>
-     
- 
-    <!-- Topbar  -->
-    <header class="w-100">
-        <div class="container">
-            <div class="top-header d-flex justify-content-between">
-                <div class="top-header-left">
-                    <div class="social-list-box d-flex align-items-center mr-auto">
-                        <span>Follow Us</span>
-                        <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="top-header-right d-flex align-items-center justify-content-end">
-                    <div class="cart-box">
-                        <ul class="list-unstyled mb-0 mr-4">
-                            <li class="cart-main">
-                                <a href="#">
-                                    <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
-                                    <span>0 - Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-sm btn-outline-primary text-uppercase mr-3">Register</a>
-                    <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container">
-                <a class="navbar-brand d-inline-block mr-4" href="#">
-                    <img src="../assets/images/logo.png" alt="logo">
-                </a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
-                        <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
-                        <li class="nav-item"><a class="nav-link" href="">CONTACT </a></li>
+<body>
+<header class="w-100">
+    <div class="container">
+        <div class="top-header d-flex justify-content-between">
+            <div class="top-header-left">
+                <div class="social-list-box d-flex align-items-center mr-auto">
+                    <span>Follow Us</span>
+                    <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                     </ul>
                 </div>
-                <a class="btn-add-pet d-flex align-items-center text-uppercase animated fadeInRight text-decoration-none" href="#">
-                    <div class="add-text">Add Pet</div>
-                    <div class="icon-box position-relative text-center">
-                        <i class="fa fa-plus"></i>
-                    </div>
-                </a>
             </div>
-        </nav>
-    </header>
+            <div class="top-header-right d-flex align-items-center justify-content-end">
+                <div class="cart-box">
+                    <ul class="list-unstyled mb-0 mr-4">
+                        <li class="cart-main">
+                            <a href="#">
+                                <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
+                                <span>0 - Item</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase mr-3">Register</a>
+                <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand d-inline-block mr-4" href="#">
+                <img src="../assets/images/logo.png" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
+                    <li class="nav-item"><a class="nav-link" href="">CONTACT </a></li>
+                </ul>
+            </div>
+            <a class="btn-add-pet d-flex align-items-center text-uppercase animated fadeInRight text-decoration-none" href="#">
+                <div class="add-text">Add Pet</div>
+                <div class="icon-box position-relative text-center">
+                    <i class="fa fa-plus"></i>
+                </div>
+            </a>
+        </div>
+    </nav>
+</header>
 
-    <!-- Breadcrumbs -->
+<!-- Breadcrumbs -->
 <div class="container">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
+        <ol class="breadcrumb d-flex flex-wrap mt-0">
+            <li class="breadcrumb-item d-flex overflow-hidden align-items-center">
                 <a href="/pages/index.html" title="Home">
                     <img src="https://www.agentpet.com/img/home-icon.svg" alt="home"></a>
             </li>
@@ -86,826 +84,1605 @@
 </div>
 <!-- Form to find pets clinic  -->
 <div class="container">
-    <div class="find-vetshop-box">
+    <div class="find-vet-shop-box d-flex">
         <div class="left-box border-box">
-<div class="left-box-header">
-    <div class="leftbox-header-inner">
-        <h2>Find Pet & Vet Clinic:</h2>
-    </div>
-</div>
-        </div>
-    </div>
-</div>
-<!-- Search Form  -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-5">
-            <form action="">
-                <div class="form-group input-group icon-group">
-                    <input type="text" class="form-control" name="search_term" id="" placeholder="Name">
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>
-                    </div>
+            <div class="left-box-header">
+                <div class="left-box-header-inner d-flex align-items-center">
+                    <h2 class="box-title">Find Pet & Vet Clinic</h2>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                    <select name="city" id="city" class="form-control form-control-md" onchange="this.form.submit()">
-                    <option value="">Choose City</option>
-                    <option  value="Abbottabad">Abbottabad</option>
-                    <option  value="Badaber">Badaber</option>
-                    <option  value="Beha">Beha</option>
-                    <option  value="Burlington">Burlington</option>
-                    <option  value="Chak 74 JB Thikriwala">Chak 74 JB Thikriwala</option>
-                    <option  value="Dhandrah, Chak 66 JB">Dhandrah, Chak 66 JB</option>
-                    <option  value="Faisalabad">Faisalabad</option>
-                    <option  value="Gujranwala">Gujranwala</option>
-                    <option  value="Hyderabad">Hyderabad</option>
-                    <option  value="Islamabad">Islamabad</option>
-                    <option  value="Karachi">Karachi</option>
-                    <option  value="Khurianwala">Khurianwala</option>
-                    <option  value="Khwazakhela">Khwazakhela</option>
-                    <option  value="Lahore">Lahore</option>
-                    <option  value="Madharian Wala Kalar">Madharian Wala Kalar</option>
-                    <option  value="Malakand">Malakand</option>
-                    <option  value="Mardan">Mardan</option>
-                    <option  value="Mingora">Mingora</option>
-                    <option  value="Multan">Multan</option>
-                    <option  value="Nawaan Graan">Nawaan Graan</option>
-                    <option  value="Peshawar">Peshawar</option>
-                    <option  value="Quetta">Quetta</option>
-                    <option  value="Rahwali">Rahwali</option>
-                    <option  value="Rawalpindi">Rawalpindi</option>
-                    <option  value="Sakhakot">Sakhakot</option>
-                    <option  value="San Francisco">San Francisco</option>
-                    <option  value="Sargodha">Sargodha</option>
-                    <option  value="Shah Faisal Town">Shah Faisal Town</option>
-                    <option  value="Shahderai">Shahderai</option>
-                    <option  value="Sher Palam">Sher Palam</option>
-                    <option  value="Sialkot">Sialkot</option>
-                    <option  value="Swat">Swat</option>
-                    <option  value="Thana">Thana</option>
-                    </select>
+                <form>
+                    <div class="form-group input-group icon-group position-relative d-flex flex-wrap w-100">
+                        <input type="text" class="form-control" placeholder="Name" name="search_term" value="">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-link">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
                     </div>
-<div class="col-sm-4 col-6">
-<div class="form-group checkboxes">
-    <label  class="custom-checkbox dark font-size-sm">
-<input type="checkbox" name="type1" id="Pet Shop" onchange="this.form.submit()" checked="&quote;" checked&quote;>
-<span class="checkmark"></span>
-    <span class="text text-uppercase text-danger">Pet Shop</span>
-    </label>
-</div>
-</div>
-<!-- For vet clinic  -->
-<div class="col-sm-4 col-6">
-    <div class="form-group checkboxes">
-        <label class="custom-checkbox dark font-size-sm">
-            <input type="checkbox"  name="type2"  id="Vet Shop" onchange="this.form.submit()">
-            <span class="checkmark"></span>
-            <span class="text text-uppercase text-danger">Vet Clinic</span>
-        </label>
-    </div>
-</div>
- </div>
- </form>
-</div>
-<div class="left-box-body">
-    <div class="result-card-list">
-        <a class="media vet-shop-card" data-markerid="0">
-<div class="media-body">
-    <h5>Zohaib Khan</h5>
-    <div class="star-rating-box">
-         <small><img  src="/assets/images/vet clinic.png" class="img-thumbnail float-right" alt="pet shop" height="85px" width="95px"></small> 
-        <ul class="class-rating-list">
-            <li class="">
-                <i class="fas fa-star"></i>
-            </li>
-            
-            <li class="">
-                <i class="fas fa-star"></i>
-            </li>
-            
-            <li class="">
-                <i class="fas fa-star"></i>
-            </li>
-            
-            <li class="">
-                <i class="fas fa-star"></i>
-            </li>
-            
-            <li class="">
-                <i class="fas fa-star"></i>
-            </li>
-        </ul>
-    
-    </div>
-    <address>Zia Colony Faisalabad,Punjab,Pakistan</address>
-    <p class="time">Phone 03457747744</p>
-</div>
-<div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">                  
-</div>
- </a>
- <!-- 2nd shop  -->
- <a class="media vet-shop-card" data-markerid="1">
-    <div class="media-body">
-        <h5>RAJPUT BIRDS SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Khurianwala, Faisalabad, Punjab, Pakistan</address>
-        <p class="time">Phone 03438700063</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-    </div>
-</a>
-<!-- 3rd shop -->
-<a class="media vet-shop-card" data-markerid="2">
-    <div class="media-body">
-        <h5>REEM PET STORE</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>9-A Shiblee Dr, Block A People&#039;s Colony No 1, Faisalabad, Punjab, Pakistan</address>
-        <p class="time">Phone 03216682313</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- 4th shop  -->
-<a class="media vet-shop-card" data-markerid="3">
-    <div class="media-body">
-        <h5>THE BIRDS SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Sargodha Road, Shadman Town Faisalabad, Punjab, Pakistan</address>
-        <p class="time">Phone 03006611733</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- 5th shop  -->
-<a class="media vet-shop-card" data-markerid="4">
-    <div class="media-body">
-        <h5>TARIQ FISH SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Clock Tower, Faisalabad, Punjab, Pakistan</address>
-        <p class="time">Phone 03007606374</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-         </div>
-</a>
-<!-- 6th shop  -->
+                    <div class="row align-items-center">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <select class="form-control form-control-md" name="city">
+                                    <option value="">Choose City</option>
+                                    <option value="Abbottabad">Abbottabad</option>
+                                    <option value="Badaber">Badaber</option>
+                                    <option value="Beha">Beha</option>
+                                    <option value="Burlington">Burlington</option>
+                                    <option value="Chak 74 JB Thikriwala">Chak 74 JB Thikriwala</option>
+                                    <option value="Dhandrah, Chak 66 JB">Dhandrah, Chak 66 JB</option>
+                                    <option value="Faisalabad">Faisalabad</option>
+                                    <option value="Gujranwala">Gujranwala</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Khurianwala">Khurianwala</option>
+                                    <option value="Khwazakhela">Khwazakhela</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Madharian Wala Kalar">Madharian Wala Kalar</option>
+                                    <option value="Malakand">Malakand</option>
+                                    <option value="Mardan">Mardan</option>
+                                    <option value="Mingora">Mingora</option>
+                                    <option value="Multan">Multan</option>
+                                    <option value="Nawaan Graan">Nawaan Graan</option>
+                                    <option value="Peshawar">Peshawar</option>
+                                    <option value="Quetta">Quetta</option>
+                                    <option value="Rahwali">Rahwali</option>
+                                    <option value="Rawalpindi">Rawalpindi</option>
+                                    <option value="Sakhakot">Sakhakot</option>
+                                    <option value="San Francisco">San Francisco</option>
+                                    <option value="Sargodha">Sargodha</option>
+                                    <option value="Shah Faisal Town">Shah Faisal Town</option>
+                                    <option value="Shahderai">Shahderai</option>
+                                    <option value="Sher Palam">Sher Palam</option>
+                                    <option value="Sialkot">Sialkot</option>
+                                    <option value="Swat">Swat</option>
+                                    <option value="Thana">Thana</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="form-group checkboxes">
+                                <label class="custom-checkbox dark font-size-sm position-relative text-uppercase">
+                                    <input type="checkbox" name="type1" checked="checked" value="Pet Shop">
+                                    <span class="checkmark"></span>
+                                    <span class="text text-uppercase">Pet Shop</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="form-group checkboxes">
+                                <label class="custom-checkbox dark font-size-sm position-relative text-uppercase">
+                                    <input type="checkbox" name="type2" value="Pet Shop">
+                                    <span class="checkmark"></span>
+                                    <span class="text text-uppercase">VET CLINIC</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="left-box-body">
+                <div class="result-card-list mCustomScrollbar _mCS_1">
+                    <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 665px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                        <a class="media vet-shop-card" data-markerid="0">
+                            <div class="media-body">
+                                <h5>ZOHAIB AVIARY</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
 
-<a class="media vet-shop-card" data-markerid="5">
-    <div class="media-body">
-        <h5>PET PLANET</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Faisalabad, Punjab, Pakistan</address>
-        <p class="time">Phone 03218665881</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- 7th shop  -->
-<a class="media vet-shop-card" data-markerid="6">
-    <div class="media-body">
-        <h5>HUSH CAT</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Susan Rd, Dawood Colony, Madina Town, Block Z Madina Town, Faisalabad, Punjab 38860, Pakistan</address>
-        <p class="time">Phone 03226225889</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- 8th shop  -->
-<a class="media vet-shop-card" data-markerid="7">
-    <div class="media-body">
-        <h5>ISLAMI BHAI BIRDS &amp; FEED SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Block D Satellite Town, Gujranwala, Punjab, Pakistan</address>
-        <p class="time">Phone 03446498581</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- 9th shop  -->
-<a class="media vet-shop-card" data-markerid="8">
-    <div class="media-body">
-        <h5>BIRDS COTTAGE</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Malik Sohail Rd, Nawaan Graan, Azad Jammu and Kashmir</address>
-        <p class="time">Phone 03000737373</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 10  -->
-<a class="media vet-shop-card" data-markerid="9">
-    <div class="media-body">
-        <h5>BIRDS PLANET</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Islam Colony Civil Lines, Gujranwala, Punjab, Pakistan</address>
-        <p class="time">
-            Phone 03234657894
-        </p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 11  -->
-<a class="media vet-shop-card" data-markerid="10">
-    <div class="media-body">
-        <h5>A.B PET STORE</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Sialkot Rd, Civil Lines, Gujranwala, Punjab, Pakistan</address>
-        <p class="time">Phone 03216445533</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 12  -->
-<a class="media vet-shop-card" data-markerid="11">
-    <div class="media-body">
-        <h5>SEA WORLD AQUARIUM &amp; FISH SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Abbot Rd, Mohalla Lahori Shah, Sialkot, Punjab, Pakistan</address>
-        <p class="time">Phone 03338606431</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 13  -->
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
 
-<a class="media vet-shop-card" data-markerid="12">
-    <div class="media-body">
-        <h5>PETS CRAFTS</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Zia Colony Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03457747744</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="1">
+                            <div class="media-body">
+                                <h5>RAJPUT BIRDS SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Khurianwala, Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03438700063</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="2">
+                            <div class="media-body">
+                                <h5>REEM PET STORE</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>9-A Shiblee Dr, Block A People's Colony No 1, Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03216682313</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="3">
+                            <div class="media-body">
+                                <h5>THE BIRDS SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Sargodha Road, Shadman Town Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03006611733</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="4">
+                            <div class="media-body">
+                                <h5>TARIQ FISH SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Clock Tower, Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03007606374</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="5">
+                            <div class="media-body">
+                                <h5>PET PLANET</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Faisalabad, Punjab, Pakistan</address>
+                                <p class="time">Phone 03218665881</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="6">
+                            <div class="media-body">
+                                <h5>HUSH CAT</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Susan Rd, Dawood Colony, Madina Town, Block Z Madina Town, Faisalabad, Punjab 38860, Pakistan</address>
+                                <p class="time">Phone 03226225889</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="7">
+                            <div class="media-body">
+                                <h5>ISLAMI BHAI BIRDS &amp; FEED SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Block D Satellite Town, Gujranwala, Punjab, Pakistan</address>
+                                <p class="time">Phone 03446498581</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="8">
+                            <div class="media-body">
+                                <h5>BIRDS COTTAGE</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Malik Sohail Rd, Nawaan Graan, Azad Jammu and Kashmir</address>
+                                <p class="time">Phone 03000737373</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="9">
+                            <div class="media-body">
+                                <h5>BIRDS PLANET</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Islam Colony Civil Lines, Gujranwala, Punjab, Pakistan</address>
+                                <p class="time">Phone 03116397587</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="10">
+                            <div class="media-body">
+                                <h5>A.B PET STORE</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Sialkot Rd, Civil Lines, Gujranwala, Punjab, Pakistan</address>
+                                <p class="time">Phone 03216445533</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="11">
+                            <div class="media-body">
+                                <h5>SEA WORLD AQUARIUM &amp; FISH SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Abbot Rd, Mohalla Lahori Shah, Sialkot, Punjab, Pakistan</address>
+                                <p class="time">Phone 03338606431</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="12">
+                            <div class="media-body">
+                                <h5>PETS CRAFTS</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Gohadpur, Sialkot, Punjab, Pakistan</address>
+                                <p class="time">Phone 03324567560</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="13">
+                            <div class="media-body">
+                                <h5>BUY BIRDS SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Pakka Garha, Sialkot, Punjab, Pakistan</address>
+                                <p class="time">Phone 03157825328</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="14">
+                            <div class="media-body">
+                                <h5>PURRFECT PET SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Near Board Bazar, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
+                                <p class="time">Phone 03159934646</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="15">
+                            <div class="media-body">
+                                <h5>THE PETS MALL</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>University Town, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
+                                <p class="time">Phone 03479700299</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="16">
+                            <div class="media-body">
+                                <h5>M AYYAN BIRDS POINT</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Art School Rd, Quetta, Balochistan, Pakistan</address>
+                                <p class="time">Phone 03101124195</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="17">
+                            <div class="media-body">
+                                <h5>SKY BLUE AQUARIUM SHOP</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Quetta, Balochistan, Pakistan</address>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="18">
+                            <div class="media-body">
+                                <h5>NATO MARKET</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Quetta, Balochistan, Pakistan</address>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                        <a class="media vet-shop-card" data-markerid="19">
+                            <div class="media-body">
+                                <h5>FISH &amp; FISH</h5>
+                                <div class="star-rating-box">
+                                    <small></small>
+                                    <ul class="star-rating-list">
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+
+                                        <li class="">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <!--<small class="total-reviews">(33)</small>-->
+                                </div>
+                                <address>Jadoon Plaza Phase 2 Rd, Abbottabad, Khyber Pakhtunkhwa, Pakistan</address>
+                                <p class="time">Phone 03339353666</p>
+                            </div>
+                            <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
+
+                            </div>
+                        </a>
+                    </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 194px; max-height: 655px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+                </div>
+            </div>
         </div>
-        <address>Gohadpur, Sialkot, Punjab, Pakistan</address>
-        <p class="time">Phone 03324567560</p>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27225.328104891913!2d74.25945263101292!3d31.464619114336386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1536860389992"
+                style="border:0; width: 100%" allowfullscreen="" frameborder="0"></iframe>
     </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 14  -->
-<a class="media vet-shop-card" data-markerid="13">
-    <div class="media-body">
-        <h5>BUY BIRDS SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Pakka Garha, Sialkot, Punjab, Pakistan</address>
-        <p class="time">Phone 03157825328</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 15  -->
-<a class="media vet-shop-card" data-markerid="14">
-    <div class="media-body">
-        <h5>PURRFECT PET SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Near Board Bazar, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
-        <p class="time">Phone 03159934646</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- shop # 16  -->
-<a class="media vet-shop-card" data-markerid="15">
-    <div class="media-body">
-        <h5>THE PETS MALL</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>University Town, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>
-        <p class="time">Phone 03479700299</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        
-    </div>
-</a>
-<!-- Shop # 17  -->
-<a class="media vet-shop-card" data-markerid="16">
-    <div class="media-body">
-        <h5>M AYYAN BIRDS POINT</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Art School Rd, Quetta, Balochistan, Pakistan</address>
-        <p class="time">Phone 03101124195</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        </div>
-</a>
-<!-- Shop # 18  -->
-<a class="media vet-shop-card" data-markerid="17">
-    <div class="media-body">
-        <h5>SKY BLUE AQUARIUM SHOP</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Quetta, Balochistan, Pakistan</address>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-        
-    </div>
-</a>
-<!-- Shop # 19 -->
-<a class="media vet-shop-card" data-markerid="18">
-    <div class="media-body">
-        <h5>NATO MARKET</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        </div>
-        <address>Quetta, Balochistan, Pakistan</address>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-         </div>
-</a>
-<!-- Shop # 20 -->
-<a class="media vet-shop-card" data-markerid="19">
-    <div class="media-body">
-        <h5>FISH &amp; FISH</h5>
-        <div class="star-rating-box">
-            <small></small>
-            <ul class="star-rating-list">
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-                
-                <li class="">
-                    <i class="fas fa-star"></i>
-                </li>
-            </ul>
-        
-        </div>
-        <address>Jadoon Plaza Phase 2 Rd, Abbottabad, Khyber Pakhtunkhwa, Pakistan</address>
-        <p class="time">Phone 03339353666</p>
-    </div>
-    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">
-     </div>
-    </a>
-    </div>
+
 </div>
- </div>
- <!-- Map  -->
- <div class="right-box">
-     <!-- <div id="map" class="map">
-        <iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
-     </div>
- </div> -->
- <div class="map map-styling" id="map">
+
+
+
+<!-- Search Form  -->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-sm-5">-->
+<!--            <form action="">-->
+<!--                <div class="form-group input-group icon-group">-->
+<!--                    <input type="text" class="form-control" name="search_term" id="" placeholder="Name">-->
+<!--                    <div class="input-group-append">-->
+<!--                        <button type="submit" class="btn btn-danger"><i class="fa fa-search"></i></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-sm-12">-->
+<!--                        <div class="form-group">-->
+<!--                            <select name="city" id="city" class="form-control form-control-md" onchange="this.form.submit()">-->
+<!--                                <option value="">Choose City</option>-->
+<!--                                <option  value="Abbottabad">Abbottabad</option>-->
+<!--                                <option  value="Badaber">Badaber</option>-->
+<!--                                <option  value="Beha">Beha</option>-->
+<!--                                <option  value="Burlington">Burlington</option>-->
+<!--                                <option  value="Chak 74 JB Thikriwala">Chak 74 JB Thikriwala</option>-->
+<!--                                <option  value="Dhandrah, Chak 66 JB">Dhandrah, Chak 66 JB</option>-->
+<!--                                <option  value="Faisalabad">Faisalabad</option>-->
+<!--                                <option  value="Gujranwala">Gujranwala</option>-->
+<!--                                <option  value="Hyderabad">Hyderabad</option>-->
+<!--                                <option  value="Islamabad">Islamabad</option>-->
+<!--                                <option  value="Karachi">Karachi</option>-->
+<!--                                <option  value="Khurianwala">Khurianwala</option>-->
+<!--                                <option  value="Khwazakhela">Khwazakhela</option>-->
+<!--                                <option  value="Lahore">Lahore</option>-->
+<!--                                <option  value="Madharian Wala Kalar">Madharian Wala Kalar</option>-->
+<!--                                <option  value="Malakand">Malakand</option>-->
+<!--                                <option  value="Mardan">Mardan</option>-->
+<!--                                <option  value="Mingora">Mingora</option>-->
+<!--                                <option  value="Multan">Multan</option>-->
+<!--                                <option  value="Nawaan Graan">Nawaan Graan</option>-->
+<!--                                <option  value="Peshawar">Peshawar</option>-->
+<!--                                <option  value="Quetta">Quetta</option>-->
+<!--                                <option  value="Rahwali">Rahwali</option>-->
+<!--                                <option  value="Rawalpindi">Rawalpindi</option>-->
+<!--                                <option  value="Sakhakot">Sakhakot</option>-->
+<!--                                <option  value="San Francisco">San Francisco</option>-->
+<!--                                <option  value="Sargodha">Sargodha</option>-->
+<!--                                <option  value="Shah Faisal Town">Shah Faisal Town</option>-->
+<!--                                <option  value="Shahderai">Shahderai</option>-->
+<!--                                <option  value="Sher Palam">Sher Palam</option>-->
+<!--                                <option  value="Sialkot">Sialkot</option>-->
+<!--                                <option  value="Swat">Swat</option>-->
+<!--                                <option  value="Thana">Thana</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-4 col-6">-->
+<!--                        <div class="form-group checkboxes">-->
+<!--                            <label  class="custom-checkbox dark font-size-sm">-->
+<!--                                <input type="checkbox" name="type1" id="Pet Shop" onchange="this.form.submit()" checked="&quote;" checked&quote;>-->
+<!--                                <span class="checkmark"></span>-->
+<!--                                <span class="text text-uppercase text-danger">Pet Shop</span>-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; For vet clinic  &ndash;&gt;-->
+<!--                    <div class="col-sm-4 col-6">-->
+<!--                        <div class="form-group checkboxes">-->
+<!--                            <label class="custom-checkbox dark font-size-sm">-->
+<!--                                <input type="checkbox"  name="type2"  id="Vet Shop" onchange="this.form.submit()">-->
+<!--                                <span class="checkmark"></span>-->
+<!--                                <span class="text text-uppercase text-danger">Vet Clinic</span>-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="left-box-body">-->
+<!--            <div class="result-card-list">-->
+<!--                <a class="media vet-shop-card" data-markerid="0">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>Zohaib Khan</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small><img  src="/assets/images/vet clinic.png" class="img-thumbnail float-right" alt="pet shop" height="85px" width="95px"></small>-->
+<!--                            <ul class="class-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+
+<!--                        </div>-->
+<!--                        <address>Zia Colony Faisalabad,Punjab,Pakistan</address>-->
+<!--                        <p class="time">Phone 03457747744</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 2nd shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="1">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>RAJPUT BIRDS SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Khurianwala, Faisalabad, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03438700063</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 3rd shop &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="2">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>REEM PET STORE</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>9-A Shiblee Dr, Block A People&#039;s Colony No 1, Faisalabad, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03216682313</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 4th shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="3">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>THE BIRDS SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Sargodha Road, Shadman Town Faisalabad, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03006611733</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 5th shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="4">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>TARIQ FISH SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Clock Tower, Faisalabad, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03007606374</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 6th shop  &ndash;&gt;-->
+
+<!--                <a class="media vet-shop-card" data-markerid="5">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>PET PLANET</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Faisalabad, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03218665881</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 7th shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="6">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>HUSH CAT</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Susan Rd, Dawood Colony, Madina Town, Block Z Madina Town, Faisalabad, Punjab 38860, Pakistan</address>-->
+<!--                        <p class="time">Phone 03226225889</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 8th shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="7">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>ISLAMI BHAI BIRDS &amp; FEED SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Block D Satellite Town, Gujranwala, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03446498581</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; 9th shop  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="8">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>BIRDS COTTAGE</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Malik Sohail Rd, Nawaan Graan, Azad Jammu and Kashmir</address>-->
+<!--                        <p class="time">Phone 03000737373</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 10  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="9">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>BIRDS PLANET</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Islam Colony Civil Lines, Gujranwala, Punjab, Pakistan</address>-->
+<!--                        <p class="time">-->
+<!--                            Phone 03234657894-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 11  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="10">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>A.B PET STORE</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Sialkot Rd, Civil Lines, Gujranwala, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03216445533</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 12  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="11">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>SEA WORLD AQUARIUM &amp; FISH SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Abbot Rd, Mohalla Lahori Shah, Sialkot, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03338606431</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 13  &ndash;&gt;-->
+
+<!--                <a class="media vet-shop-card" data-markerid="12">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>PETS CRAFTS</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Gohadpur, Sialkot, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03324567560</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 14  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="13">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>BUY BIRDS SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Pakka Garha, Sialkot, Punjab, Pakistan</address>-->
+<!--                        <p class="time">Phone 03157825328</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 15  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="14">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>PURRFECT PET SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Near Board Bazar, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>-->
+<!--                        <p class="time">Phone 03159934646</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; shop # 16  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="15">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>THE PETS MALL</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>University Town, Peshawar, Khyber Pakhtunkhwa, Pakistan</address>-->
+<!--                        <p class="time">Phone 03479700299</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Shop # 17  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="16">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>M AYYAN BIRDS POINT</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Art School Rd, Quetta, Balochistan, Pakistan</address>-->
+<!--                        <p class="time">Phone 03101124195</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Shop # 18  &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="17">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>SKY BLUE AQUARIUM SHOP</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Quetta, Balochistan, Pakistan</address>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Shop # 19 &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="18">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>NATO MARKET</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <address>Quetta, Balochistan, Pakistan</address>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Shop # 20 &ndash;&gt;-->
+<!--                <a class="media vet-shop-card" data-markerid="19">-->
+<!--                    <div class="media-body">-->
+<!--                        <h5>FISH &amp; FISH</h5>-->
+<!--                        <div class="star-rating-box">-->
+<!--                            <small></small>-->
+<!--                            <ul class="star-rating-list">-->
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+
+<!--                                <li class="">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+
+<!--                        </div>-->
+<!--                        <address>Jadoon Plaza Phase 2 Rd, Abbottabad, Khyber Pakhtunkhwa, Pakistan</address>-->
+<!--                        <p class="time">Phone 03339353666</p>-->
+<!--                    </div>-->
+<!--                    <div class="image-box" style="background-image:url('https://www.agentpet.com/img/no-image2.png')">-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Map  &ndash;&gt;-->
+<!--    <div class="right-box">-->
+<!--        &lt;!&ndash; <div id="map" class="map">-->
+<!--           <iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>-->
+<!--        </div>-->
+<!--    </div> &ndash;&gt;-->
+<!--        <div class="map map-styling" id="map">-->
+<!--            <div>-->
+<!--                <div class="gm-style">-->
+<!--                    <div>-->
+<!--                        <button class="draggable-false" draggable="false" aria-label="keyboard shortcuts" title="keyboard shortcuts" type="button" >-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                    <div class="map-styling" tabindex="0" aria-label="map" aria-roledescription="map" role="group" >-->
+<!--                        <div class="map-styling">-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Pagination  &ndash;&gt;-->
+<!--    <div class="text-center">-->
+<!--        <ul class="pagination" role="navigation">-->
+<!--            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">-->
+<!--                <span class="page-link" aria-hidden="true">&lsaquo;</span>-->
+<!--            </li>-->
+<!--            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2">2</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=3">3</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=4">4</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=5">5</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=6">6</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=7">7</a></li>-->
+<!--            <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=8">8</a></li>-->
+<!--            <li class="page-item">-->
+<!--                <a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 <div>
-    <div class="gm-style">
-        <div>
-            <button class="draggable-false" draggable="false" aria-label="keyboard shortcuts" title="keyboard shortcuts" type="button" >
- </button>
-        </div>
-        <div class="map-styling" tabindex="0" aria-label="map" aria-roledescription="map" role="group" >
-<div class="map-styling">
-    
 </div>
-        </div>
-    </div>
-</div>
- </div>
-</div>
-<!-- Pagination  -->
-<div class="text-center">
-    <ul class="pagination" role="navigation">
-        <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
-            <span class="page-link" aria-hidden="true">&lsaquo;</span>
-        </li>
-        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2">2</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=3">3</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=4">4</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=5">5</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=6">6</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=7">7</a></li>
-        <li class="page-item"><a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=8">8</a></li>
-        <li class="page-item">
-            <a class="page-link" href="https://www.agentpet.com/pets-and-vets?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
-        </li>
-</ul>
-</div>
-</div>
-<div>
-    
-</div>
-
 </body>
 
 
