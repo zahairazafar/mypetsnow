@@ -994,8 +994,9 @@ div {
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.14);
-  height: 1580px;
+  height: 100%;
   padding-bottom: 15px;
+  margin-top: 10px;
 }
 
 .filter-sidebar .sidebar-header {
@@ -1375,6 +1376,7 @@ h6 {
   border-radius: 6px;
   padding: 10px 24px;
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 .cards-list-header .pets-list-header {
@@ -1830,6 +1832,7 @@ ul {
   padding-left: 0;
   list-style: none;
   border-radius: 0.25rem;
+  padding-top: 10px;
 }
 
 li {
