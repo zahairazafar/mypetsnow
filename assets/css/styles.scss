@@ -615,6 +615,231 @@ button {
   }
 }
 
+// <---------- PETS AND WETS STYLES ----------->
+.breadcrumb {
+  list-style: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: #414141;
+  line-height: 0;
+  padding: 18px 0 8px;
+  background: transparent !important;
+  .breadcrumb-item {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+    max-width: 100%;
+    &:first-child a {
+      display: flex;
+      align-items: center;
+    }
+    & + .breadcrumb-item {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-image: url("../images/angle-right-small.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-right: 24px;
+        margin-left: -6px;
+      }
+    }
+    .active {
+      color: #6c757d;
+    }
+  }
+}
+
+.find-vet-shop-box {
+  margin-bottom: 80px;
+  .left-box {
+    flex: 0 0 410px;
+    max-width: 410px;
+    padding: 18px;
+    margin-right: 15px;
+    .left-box-header-inner {
+      margin-bottom: 18px;
+      .box-title {
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin-right: auto;
+        margin-bottom: 0;
+      }
+    }
+    .left-box-body {
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      margin: 0px -18px;
+    }
+  }
+  .custom-checkbox {
+    padding-left: 32px;
+  }
+  .result-card-list {
+    max-height: 665px;
+  }
+  .right-box {
+    flex: 1 1 auto;
+  }
+}
+
+.border-box {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+
+.input-group {
+  align-items: stretch;
+  &.icon-group {
+    .btn {
+      border-radius: 4px;
+      color: #404040;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+  }
+}
+
+.input-group-append {
+  margin-left: -1px;
+  display: flex;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+select.form-control {
+  text-indent: -2px;
+  background-image: url("../images/caret-down-black.svg");
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  padding-right: 35px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(51px + 2px);
+  padding: 0.375rem 0 0.375rem 0.75rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-md {
+  height: 43px !important;
+}
+
+.font-size-sm {
+  font-size: 0.9375rem !important;
+}
+
+.custom-checkbox {
+  font-weight: 400;
+  white-space: nowrap;
+  input {
+    display: none;
+    &:checked + .checkmark {
+      background-color: #f84646;
+      border: 1px solid #f84646;
+    }
+  }
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s ease 0s;
+  }
+  .text {
+    color: black;
+  }
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.media {
+  display: flex;
+}
+
+.vet-shop-card {
+  padding: 10px 18px 10px 24px;
+  font-size: 0.9rem;
+  align-items: center !important;
+  .media-body {
+    padding-right: 10px;
+  }
+  h5 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #404040;
+  }
+  address {
+    display: block;
+    margin-bottom: 2px;
+    font-style: normal;
+    line-height: inherit;
+  }
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .image-box {
+    flex: 0 0 80px;
+    max-width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100px;
+    background-position: center center;
+    height: 80px;
+  }
+}
+
+.media-body {
+  flex: 1;
+}
+
+.star-rating-box {
+  display: flex;
+  align-items: center;
+  color: #e7711b;
+  .star-rating-list {
+    list-style: none;
+    padding: 0 5px;
+    margin: 2px 0 0;
+    color: #d4d4d4;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    li {
+      padding: 0 2px;
+    }
+  }
+}
+
+small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
 // <--------- ADD PET STYLES ------------------->
 .form-container {
   background: hsl(86, 85%, 95%);
@@ -726,6 +951,7 @@ Form
   overflow: hidden;
   display: flex;
 }
+
 .signup-connect,
 .signup-classic {
   width: 50%;
