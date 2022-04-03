@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws | Pets Online Store in Pakistan</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/439932ce9d.js" crossorigin="anonymous"></script>
 <!--    <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css" />-->
 <!--    <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css" />-->
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
@@ -17,12 +18,13 @@
 </head>
 
 <body>
+    <!--  topbar  -->
     <header class="w-100">
         <div class="container">
             <div class="top-header d-flex justify-content-between">
                 <div class="top-header-left">
-                    <div class="social-list-box d-flex align-items-center mr-auto">
-                        <span>Follow Us</span>
+                    <div class="social-list-box text-dark d-flex align-items-center mr-auto">
+                        <span >Follow Us</span>
                         <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -37,39 +39,43 @@
                             <li class="cart-main">
                                 <a href="#" class="text-decoration-none">
                                     <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
-                                    <span>0 - Item</span>
+                                    <span class="text-danger">0 - Item</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-sm btn-secondary text-uppercase mr-3">Register</a>
-                    <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase mr-3">Register</a>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase">Login</a>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-warning  font-weight-bold">
-            <div class="container">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg  mt-3  font-weight-bold">
+            <div class="container-fluid">
                 <a class="navbar-brand d-inline-block mr-4" href="#">
                     <img src="../assets/images/logo.png" alt="logo">
+                   <span class="nav-logo-text">ʍʏքɛȶֆռօա.ƈօʍ</span>
                 </a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 ">
                         <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/buy-sell.html">BUY/SELL </a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/contact-us.html">CONTACT </a></li>
                     </ul>
                 </div>
                 <a class="btn-add-pet d-flex text-decoration-none align-items-center text-uppercase animated fadeInRight"
-                    href="./add-pet.html">
+                    href="/pages/add-pet.html">
                     <div class="add-text">Add Pet</div>
                     <div class="icon-box position-relative text-center">
-                        <i class="fa fa-plus"></i>
+                        <img class="addpet-img" src="../assets/images/add-pet paw.png" alt="pet icon " height="60px" width="65px">
+                        <!-- <i style="margin-top: -10px;" class="fa fa-plus"></i> -->
                     </div>
                 </a>
             </div>
         </nav>
     </header>
+    <hr>
 
     <!--    carousel -->
     <section class="hero-section">
@@ -95,135 +101,102 @@
             </a>
         </div>
     </section>
-
-    <section class="red-boxes-section w-100 d-flex">
-        <a class="r-box text-decoration-none" href="#">
-            <div class="icon-box">
-                <img src="img/buy-sell-icon.svg" alt="Buy Sell">
-            </div>
-            <div class="text-box">
-                <h5 class="r-box-title">Pet Buy / Sell</h5>
-                <p class="r-box-desc">Buying and selling of pets made easy... <br>
-                    <b class="text-uppercase">Find out more..</b>
-                </p>
-            </div>
-        </a>
-        <a class="r-box text-decoration-none" href="#">
-            <div class="icon-box">
-                <img src="img/buy-sell-icon.svg" alt="Buy Sell">
-            </div>
-            <div class="text-box">
-                <h5 class="r-box-title">Pet Buy / Sell</h5>
-                <p class="r-box-desc">Buying and selling of pets made easy... <br>
-                    <b class="text-uppercase">Find out more..</b>
-                </p>
-            </div>
-        </a>
-        <a class="r-box text-decoration-none" href="#">
-            <div class="icon-box">
-                <img src="img/buy-sell-icon.svg" alt="Buy Sell">
-            </div>
-            <div class="text-box">
-                <h5 class="r-box-title">Pet Buy / Sell</h5>
-                <p class="r-box-desc">Buying and selling of pets made easy... <br>
-                    <b class="text-uppercase">Find out more..</b>
-                </p>
-            </div>
-        </a>
-        <a class="r-box text-decoration-none" href="#">
-            <div class="icon-box">
-                <img src="img/buy-sell-icon.svg" alt="Buy Sell">
-            </div>
-            <div class="text-box">
-                <h5 class="r-box-title">Pet Buy / Sell</h5>
-                <p class="r-box-desc">Buying and selling of pets made easy... <br>
-                    <b class="text-uppercase">Find out more..</b>
-                </p>
-            </div>
-        </a>
-    </section>
-
-    <section class="search-pet-section">
-        <div class="container">
-            <div class="bg-box">
-                <h3 class="form-title">
-                    <b>3783 Pets</b> to choose from
-                </h3>
-                <form>
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="form-group has-float-label not-float">
-                                <select name="city" class="form-control">
-                                    <option value=""></option>
-                                    <option value="Lahore">Lahore</option>
-                                    <option value="Islamabad">Islamabad</option>
-                                    <option value="Karachi">Karachi</option>
-                                    <option value="Peshawar">Peshawar</option>
-                                    <option value="Faislabad">Faislabad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="form-group has-float-label not-float">
-                                <select name="city" class="form-control">
-                                    <option value=""></option>
-                                    <option value="Lahore">Lahore</option>
-                                    <option value="Islamabad">Islamabad</option>
-                                    <option value="Karachi">Karachi</option>
-                                    <option value="Peshawar">Peshawar</option>
-                                    <option value="Faislabad">Faislabad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="form-group has-float-label not-float">
-                                <select name="city" class="form-control">
-                                    <option value=""></option>
-                                    <option value="Lahore">Lahore</option>
-                                    <option value="Islamabad">Islamabad</option>
-                                    <option value="Karachi">Karachi</option>
-                                    <option value="Peshawar">Peshawar</option>
-                                    <option value="Faislabad">Faislabad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="form-group has-float-label not-float">
-                                <select name="city" class="form-control">
-                                    <option value=""></option>
-                                    <option value="Lahore">Lahore</option>
-                                    <option value="Islamabad">Islamabad</option>
-                                    <option value="Karachi">Karachi</option>
-                                    <option value="Peshawar">Peshawar</option>
-                                    <option value="Faislabad">Faislabad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group text-center checkboxes mb-0">
-                                <label class="custom-checkbox position-relative text-uppercase">
-                                    <input type="radio" name="pet_for" value="Sell" checked="checked">
-                                    <span class="checkmark"></span>
-                                    <span class="text">Buy</span>
-                                </label>
-                                <label class="custom-checkbox">
-                                    <input type="radio" name="pet_for" value="Engage">
-                                    <span class="checkmark"></span>
-                                    <span class="text">Engage</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="text-center col-12">
-                            <button class="search-btn btn-primary custom-search-button wow shake"
-                                data-wow-delay="1s">Search</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+    <hr>
+        
+     <!--  box  -->
+ <section class="red-boxes-section w-100 mt-2 d-flex">
+    <a class="r-box text-decoration-none" href="#">
+        <div class="icon-box">
+            <img src="../assets/images/pet-icons/buy-sell-icon.svg" alt="Buy Sell">
         </div>
-    </section>
-
-    <section class="relocate-pet-section">
+        <div class="text-box">
+            <h5 class="r-box-title">Pet Buy / Sell</h5>
+            <p class="r-box-desc">Buying and selling of pets made easy... <br>
+                <b class="text-uppercase">Find out more..</b>
+            </p>
+        </div>
+    </a>
+    <a class="r-box text-decoration-none" href="#">
+        <div class="icon-box">
+            <img src="../assets/images/pet-icons/pet-engage-icon.svg" alt="Buy Sell">
+        </div>
+        <div class="text-box">
+            <h5 class="r-box-title">Pet Buy / Sell</h5>
+            <p class="r-box-desc">Buying and selling of pets made easy... <br>
+                <b class="text-uppercase">Find out more..</b>
+            </p>
+        </div>
+    </a>
+    <a class="r-box text-decoration-none" href="#">
+        <div class="icon-box">
+            <img src="../assets/images/pet-icons/pet-relocation.svg" alt="Buy Sell">
+        </div>
+        <div class="text-box">
+            <h5 class="r-box-title">Pet Buy / Sell</h5>
+            <p class="r-box-desc">Buying and selling of pets made easy... <br>
+                <b class="text-uppercase">Find out more..</b>
+            </p>
+        </div>
+    </a>
+    <a class="r-box text-decoration-none" href="#">
+        <div class="icon-box">
+            <img src="../assets/images/pet-icons/eshop-icon.svg" alt="Buy Sell">
+        </div>
+        <div class="text-box">
+            <h5 class="r-box-title">Pet Buy / Sell</h5>
+            <p class="r-box-desc">Buying and selling of pets made easy... <br>
+                <b class="text-uppercase">Find out more..</b>
+            </p>
+        </div>
+    </a>
+</section>
+ <!-- Cards  -->
+ <!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+          <div class="card text-white " style="height: 230px; width: 100%;background-color: #808080;">
+            <div class="card-body">
+              <h5 class="card-title text-white ">Pet BUY/SELL</h5>
+              <img class="float-sm-right " src="../assets/images/pet-icons/buy-sell-icon.svg" alt="buy/sell icon">
+              <p class="card-text">Buying & Sellin of Pets Made Easy...</p>
+              <a href="#" class="btn btn-primary">Find Out More..</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white" style="height: 230px; width: 100%;background-color: #808080;">
+              <div class="card-body">
+                <h5 class="card-title text-white">Pet Engage</h5>
+                <img class="float-sm-right" src="../assets/images/pet-icons/pet-engage-icon.svg" alt="pets engage icon">
+                <p class="card-text ">Find a partner for your pet & engage...</p>
+                <a href="#" class="btn btn-primary">Find Out More..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body text-white " style="height: 230px; width: 100%;background-color: #808080;">
+                <h5 class="card-title text-white">Pet Relocation</h5>
+                <img class="float-sm-right" src="../assets/images/pet-icons/pet-relocation.svg" alt="pet relocation icon">
+                <p class="card-text ">International Pet Relocation...</p>
+                <a href="#" class="btn btn-primary">Find Out More..</a>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-3">
+          <div class="card text-white " style="height: 230px; width: 100%;background-color: #808080;">
+            <div class="card-body">
+              <h5 class="card-title text-white">Pet Store</h5>
+              <img class="float-sm-right"  src="../assets/images/pet-icons/eshop-icon.svg" alt="pets tore icon ">
+              <p class="card-text">Buy Pet food & Accessories...</p>
+              <a href="#" class="btn btn-primary">Find Out More..</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div> -->
+    <!-- Relocate pet section  -->
+    <section class="relocate-pet-section mt-3">
         <div class="container">
             <h2 class="relocate-section-title">
                 Relocate
@@ -233,56 +206,13 @@
                 <input type="hidden" name="_token" value="7SZSOmqJN1VyiDFLMCuYfWWnyNZ5RINsQaswVuZl">
                 <div class="row">
                     <button class="btn btn-primary wow fadeInRight get_quote_btn"
-                        style="padding-left: 40px; padding-right: 40px; visibility: visible; animation-name: fadeInRight;"
+                        style="padding-left: 20px; padding-right: 40px; visibility: visible; animation-name: fadeInRight;padding: 15px;margin-left: 13px;"
                         name="request_type" type="submit" value="1">Get a quote</button>
                 </div>
             </form>
         </div>
     </section>
-
-    <section class="featured-pets-section">
-        <div class="container">
-            <div class="paw-title-box d-block text-center position-relative mb-3">
-                <h2 class="paw-title position-relative d-inline-block">
-                    Featured Pets
-                    <div class="featured-pets-icon-box">
-                        <img src="../assets/images/dog-paw.png" alt="img" />
-                    </div>
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="featured-slider-controls">
-                        <a href="#" class="featured-slick-control featured-slick-prev slick-arrow"
-                            style="display: block;"></a>
-                        <a href="#" class="featured-slick-control featured-slick-next slick-arrow"
-                            style="display: block;"></a>
-                    </div>
-                    <div class="d-flex" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                        <div>
-                            <h3>1</h3>
-                        </div>
-                        <div>
-                            <h3>2</h3>
-                        </div>
-                        <div>
-                            <h3>3</h3>
-                        </div>
-                        <div>
-                            <h3>4</h3>
-                        </div>
-                        <div>
-                            <h3>5</h3>
-                        </div>
-                        <div>
-                            <h3>6</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+     <!-- Categories section  -->
     <section class="categories-banner-section">
         <div class="container">
             <div class="paw-title-box d-block text-center position-relative mb-3">
@@ -295,7 +225,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card bg-pet-home">
+                    <a href="#" class="categories-card  text-white categoies-banner-card bg-pet-home">
                         <img src="../assets/images/pet-food-img2.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="cio-inner overflow-hidden">
@@ -307,7 +237,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card bg-best-food">
+                    <a href="#" class="categories-card  text-white categoies-banner-card bg-best-food">
                         <img src="../assets/images/pet-collor2.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay d-flex align-items-center">
                             <div class="cio-inner overflow-hidden">
@@ -319,7 +249,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card  bg-pet-toys small">
+                    <a href="#" class="categories-card  text-white categoies-banner-card  bg-pet-toys small">
                         <img src="../assets/images/dog-sitting2.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay">
                             <div class="cio-inner">
@@ -331,7 +261,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card bg-bags small">
+                    <a href="#" class="categories-card  text-white categoies-banner-card bg-bags small">
                         <img src="../assets/images/cat-sitting2.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay">
                             <div class="cio-inner">
@@ -343,7 +273,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card  bg-pet-cage small">
+                    <a href="#" class="categories-card  text-white categoies-banner-card  bg-pet-cage small">
                         <img src="../assets/images/bird-flying2.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay">
                             <div class="cio-inner">
@@ -355,7 +285,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <a href="#" class="categories-card bg-dark text-white categoies-banner-card bg-medicine small">
+                    <a href="#" class="categories-card  text-white categoies-banner-card bg-medicine small">
                         <img src="../assets/images/fish3.png" alt="Pet food" class="category-icon">
                         <div class="card-img-overlay">
                             <div class="cio-inner">
@@ -369,147 +299,13 @@
             </div>
         </div>
     </section>
+<hr>
+    <!-- Map & form  -->
 
-    <section class="featured-pets-section">
-        <div class="container">
-            <div class="paw-title-box d-block text-center position-relative mb-3">
-                <h2 class="paw-title position-relative d-inline-block">
-                    Newly Added Pets
-                    <div class="featured-pets-icon-box">
-                        <img src="../assets/images/dog-paw.png" alt="img" />
-                    </div>
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-2">
-                    <a class="card product-card" href="#" style="width: 100%; display: inline-block;" tabindex="0">
-                        <div class="card-img-top"
-                            style="background-image:url('https://www.agentpet.com/storage/pets/TFjjanPt7h0JidH7NvRKSFL7xaQWr4dGnRA45u0P.jpg')">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Husky</h5>
-                            <p class="card-text">Dog</p>
-                            <p class="card-text location">Rawalpindi</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="search-map-section">
+    <section class="search-map-section mt-3">
         <div class="contact-form">
             <div class="contact-form-header">
-                <h2 class="form-title">Find A Nearby <b>Pet And Vets Clinic</b> in Pakistan</h2>
+                <h2 class="form-title">Find A Nearby <strong>Pet And Vets Clinic</strong> in Pakistan</h2>
             </div>
             <form action="https://www.agentpet.com/pets-and-vets" class="search-form">
                 <div class="col-box">
@@ -519,8 +315,10 @@
                 </div>
                 <div class="col-box">
                     <div class="form-group has-float-label not-float">
-                        <select name="city" class="form-control">
-                            <option value=""></option>
+                        <select  name="city" class="form-control" >
+                            <option value="">Select City
+                            </option>
+                                
                             <option value="Abbottabad">Abbottabad</option>
                             <option value="Badaber">Badaber</option>
                             <option value="Beha">Beha</option>
@@ -584,33 +382,50 @@
             style="border:0" allowfullscreen="" frameborder="0"></iframe>
     </section>
 
-    <section class="about-section">
-        <div class="container">
+<!-- About us section  -->
+    <section class="about-section ">
+        <div class="container ">
             <div class="paw-title-box d-block text-center position-relative mb-3">
                 <h2 class="paw-title position-relative d-inline-block">
                     About Us
-                    <div class="featured-pets-icon-box">
+                    <div class="featured-pets-icon-box ">
                         <img src="../assets/images/dog-paw.png" alt="img" />
                     </div>
                 </h2>
             </div>
+            <!-- about us  -->
             <div class="row about-us-row">
                 <div class="col">
-                    Based globally AgentPet.com is one of the reputable and devoted website that offers genuine services
+                    <!-- Based globally AgentPet.com is one of the reputable and devoted website that offers genuine services
                     for your beloved pets. Log in directly to AgentPet.com to find an extensive list of every possible
                     pet available worldwide. Our website comprises of several choices to choose from.Our website is
                     mainly projected for the “Pet Engage” section where you can look for the appropriate mate for your
                     pet whether they are mammals, reptiles, hamsters, ferrets, mice, iguanas, cows, pigs or birds.
                     <div class="btn-box">
-                        <a href="https://www.agentpet.com/about-us" class="btn btn-primary">Read More</a>
-                    </div>
+                        <a href="https://www.agentpet.com/about-us" class="btn-lg btn-primary" style="text-decoration: none;">Read More</a>
+                    </div> -->
+                    <button class="btn-lg  btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" style="margin-left: 110px;">Who We Are?</button>
+                    <p class="ml-5 p-4 ">Click Me !</p>
+                    <div class="collapse multi-collapse mt-3" id="multiCollapseExample1" style="margin-left: -50px;">
+                        <div class="card card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
+
+                      <div class="collapse multi-collapse mt-3" id="multiCollapseExample2">
+                        <div class="card card-body" style="margin-left: -50px;">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
+
+
                 </div>
                 <div class="col">
-                    <figure class="img-box">
-                        <img src="../assets/images/about-us-img.jpg" alt="About Us">
+                    <figure class="img-about">
+                        <img  src="../assets/images/about-us-img.jpg" alt="About Us">
                     </figure>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -632,52 +447,52 @@
                             <div class="icon-box">
                                 <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">1030</div>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.agentpet.com/pet-search?pet=most-papular-pet-type-Cat"
-                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cat">
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Bird">
                             <div class="icon-box">
-                                <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
+                                <img src="../assets/images/pet-icons/parrot.svg" alt="Bird">
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">774</div>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.agentpet.com/pet-search?pet=most-papular-pet-type-Cat"
-                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cat">
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cow">
                             <div class="icon-box">
-                                <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
+                                <img src="../assets/images/pet-icons/cow.svg" alt="Cow" height="140px" width="110px">
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">78</div>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.agentpet.com/pet-search?pet=most-papular-pet-type-Cat"
-                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cat">
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Monkey">
                             <div class="icon-box">
-                                <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
+                                <img src="../assets/images/pet-icons/monkey icon.png" alt="Monkey" height="125px" width="133px" style="padding: 5px; margin-left: 14px; "/>
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">8</div>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.agentpet.com/pet-search?pet=most-papular-pet-type-Cat"
-                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cat">
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Crocodiles">
                             <div class="icon-box">
-                                <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
+                                <img src="../assets/images/pet-icons/crocodile.svg" alt="Crocodiles" height="140px" width="110px">
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">7</div>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.agentpet.com/pet-search?pet=most-papular-pet-type-Cat"
-                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Cat">
+                            data-toggle="tooltip" data-placement="top" title="" data-original-title="Deer">
                             <div class="icon-box">
-                                <img src="../assets/images/pet-icons/cat.svg" alt="Cat">
+                                <img src="../assets/images/pet-icons/deer icon.gif" alt="Deer" height="140px" width="110px">
                             </div>
-                            <div class="total-count">1009</div>
+                            <div class="total-count">1</div>
                         </a>
                     </li>
                 </div>
@@ -685,290 +500,205 @@
         </div>
     </section>
 <!-- Footer  -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="logo-box">
-                        <img src="https://www.agentpet.com/img/agent-pet-logo-white.png" alt="Agentpet"
-                            class="img-fluid">
-                    </div>
-                    <p>Based globally AgentPet.com is one of the reputable and devoted website that offers genuine
-                        services for your beloved pets.</p>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="logo-box">
+                    <img src="../assets/images/logo.png" alt="logo"
+                        class="img-fluid addpet-img" height="95px" width="100px">
+                        <span>ʍʏքɛȶֆռօա.ƈօʍ</span>
                 </div>
-                <div class="col-md-6 col-lg-5">
-                    <form action="https://www.agentpet.com/subscribe" method="post" class="mt-4">
-                        <input type="hidden" name="_token">
-                        <div class="footer-input-group input-group mb-3">
-                            <input type="email" class="form-control"
-                                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" name="email"
-                                required="required" placeholder="Email Address" aria-label="Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-white" type="submit">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-12 col-lg-3">
-                    <div class="social-list-box mt-4">
-                        <span class="mr-2" style="font-weight: 600;">Follow Us:</span>
-                        <ul class="footer-social-list list-inline">
-                            <li>
-                                <a target="_blank" href="https://twitter.com/agentpetdotcom/">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/agentpetpakistan/">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com/officialagentpet/">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.pinterest.com/agentpet/pins/">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="section-title list-title">Pets for Sale in PAKISTAN</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/dogs/pakistan">Dog for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cats/pakistan">Cat for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fishes/pakistan">Fishes for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/birds/pakistan">Birds for Sale</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Dogs for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/dogs/lahore">Dogs for Sale in Lahore</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/dogs/karachi">Dogs for Sale in Karachi</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/dogs/islamabad">Dogs for Sale in Islamabad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/dogs/rawalpindi">Dogs for Sale in Rawalpindi</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Cats for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/cats/lahore">Cats for Sale in Lahore</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cats/karachi">Cats for Sale in Karachi</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cats/islamabad">Cats for Sale in Islamabad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cats/rawalpindi">Cats for Sale in Rawalpindi</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="section-title list-title">Birds for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/birds/lahore">Birds for Sale in Lahore</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/birds/karachi">Birds for Sale in Karachi</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/birds/islamabad">Birds for Sale in Islamabad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/birds/rawalpindi">Birds for Sale in Rawalpindi</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Fishes for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/fishes/lahore">Fishes for Sale in Lahore</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fishes/karachi">Fishes for Sale in Karachi</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fishes/islamabad">Fishes for Sale in Islamabad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fishes/rawalpindi">Fishes for Sale in Rawalpindi</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Pet Food for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/dog-food">Dog Food for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cat-food">Cat Food for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/bird-food">Bird Food for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fish-food">Fish Food for Sale</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="section-title list-title">Pet ACCESSORIES for Sale</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/dog-accessories">Dog Accessories for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/cat-accessories">Cat Accessories for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/bird-accessories">Bird Accessories for Sale</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/fish-accessories">Fish Accessories for Sale</a>
-                        </li>
-
-                    </ul>
-                    <h5 class="section-title list-title">Pets by City</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/pet-search?city=Lahore">Pets in Lahore</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/pet-search?city=Karachi">Pets in Karachi</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/pet-search?city=Islamabad">Pets in Islamabad</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/pet-search?city=Rawalpindi">Pets in Rawalpindi</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Pets by Color</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/white-pets">White Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/black-pets">Black Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/brown-pets">Brown Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/grey-pets">Grey Pets</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-md-3">
-
-                    <h5 class="section-title list-title">Pets by Temperament</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/protective-pets">Protective Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/playful-pets">Playful Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/affectionate-pets">Affectionate Pets</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/gentle-pets">Gentle Pets</a>
-                        </li>
-                    </ul>
-                    <h5 class="section-title list-title">Pets BY Compatibility</h5>
-                    <ul class="menu-list list-unstyled">
-                        <li>
-                            <a href="https://www.agentpet.com/okay-with-kids">Okay With Kids</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/okay-with-dogs">Okay With Dogs</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/okay-with-cats">Okay With Cats</a>
-                        </li>
-                        <li>
-                            <a href="https://www.agentpet.com/okay-with-appartments">Okay With Apartments</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <small class="small-font">Member of</small>
-                    <div class="logos-box">
-                        <figure>
-                            <img src="https://www.agentpet.com/img/ata.jpg" alt="ATA" class="img-fluid">
-                        </figure>
-                        <figure>
-                            <img src="https://www.agentpet.com/img/pan.jpg" alt="PAN" class="img-fluid">
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-md-3">
-
-                    <div class="logos-box">
-                        <a href="https://apps.apple.com/gb/app/agentpet/id1533453500" target="_blank">
-                            <img src="https://www.agentpet.com/img/appstore.png" alt="ATA" class="img-fluid" style="
-                            width: 200px;
-                            margin-bottom: 20px;
-                        ">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.mark.agent_pet" target="_blank">
-                            <img src="https://www.agentpet.com/img/play.png" alt="PAN" class="img-fluid" style="
-                        width: 200px;
-                        margin-bottom: 10px;
-                    ">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="copyright-box">
-                        <ul class="list-unstyled small-link-list">
-                            <li class="nav-item ">
-                                <a href="https://www.agentpet.com/about-us">About Us</a>
-                            </li>
-                            <li>
-                                <a href="https://www.agentpet.com/privacy">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="https://www.agentpet.com/terms">Terms of use</a>
-                            </li>
-                            <li>
-                                <a href="https://www.agentpet.com/contact-us">Contact</a>
-                            </li>
-                        </ul>
-                        <p class="copyright-text">© 2022 AGENTPET. All rights reserved. <a target="_blank"
-                                href="http://www.nextbridge.pk/">Powered by Nextbridge.</a></p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </footer>
+            <hr>
+            <div class="col-md-6 col-lg-5">
+                <form action="" method="post" class="mt-4">
+                    <input type="hidden" name="_token">
+                    <div class="footer-input-group input-group mb-3">
+                        <input type="email" class="form-control"
+                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" name="email"
+                            required="required" placeholder="Email Address" aria-label="Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-white" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="social-list-box mt-4">
+                    <span class="mr-2" style="font-weight: 600;">Follow Us:</span>
+                    <ul class="footer-social-list list-inline">
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="section-title list-title">Pets for Sale in PAKISTAN</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dog for Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Cat for Sale</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Dogs for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dogs for Sale in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Dogs for Sale in Karachi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Cats for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Cats for Sale in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Cats for Sale in Rawalpindi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="section-title list-title">Birds for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Birds for Sale in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Birds for Sale in Karachi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Fishes for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Fishes for Sale in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Fishes for Sale in Rawalpindi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Pet Food for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dog Food for Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Cat Food for Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                </ul>
+                <h5 class="section-title list-title">Pets by City</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Pets in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Karachi</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Rawalpindi</a>
+                    </li>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="../assets/js/slick.min.js"></script>
+                </ul>
+                <small class="small-font">Member of</small>
+                <div class="logos-box">
+                    <figure>
+                        <img src="https://www.agentpet.com/img/pan.jpg" alt="PAN" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3">
+
+                <h5 class="section-title list-title">Pets by Temperament</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Protective Pets</a>
+                    </li>
+                    <li>
+                        <a href="">Playful Pets</a>
+                    </li>
+                    <li>
+                        <a href="">Gentle Pets</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Pets BY Compatibility</h5>
+                <ul class="menu-list list-unstyled">
+                   <li>
+                        <a href="">Okay With Kids</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="col-md-3">
+
+                <div class="logos-box">
+                    <a href="https://apps.apple.com/gb/app/agentpet/id1533453500" target="_blank">
+                        <img src="https://www.agentpet.com/img/appstore.png" alt="ATA" class="img-fluid" style="
+                        width: 200px;
+                        margin-bottom: 20px;
+                    ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="copyright-box">
+                    <ul class="list-unstyled small-link-list">
+                        <li class="nav-item ">
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright-text">© 2022 AGENTPET. All rights reserved. <a target="_blank"
+                            href="http://www.nextbridge.pk/">Powered by Nextbridge.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/slick.min.js"></script>
+
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 </body>
 
 </html>

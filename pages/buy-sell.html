@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws | Pets Online Store in Pakistan</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/439932ce9d.js" crossorigin="anonymous"></script>
 <!--    <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css" />-->
 <!--    <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css" />-->
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
@@ -16,13 +17,14 @@
 
 </head>
 
-<body>
+ <body>
+   <!--  topbar  -->
     <header class="w-100">
         <div class="container">
             <div class="top-header d-flex justify-content-between">
                 <div class="top-header-left">
-                    <div class="social-list-box d-flex align-items-center mr-auto">
-                        <span>Follow Us</span>
+                    <div class="social-list-box text-dark d-flex align-items-center mr-auto">
+                        <span >Follow Us</span>
                         <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -37,41 +39,45 @@
                             <li class="cart-main">
                                 <a href="#" class="text-decoration-none">
                                     <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
-                                    <span>0 - Item</span>
+                                    <span class="text-danger">0 - Item</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-sm btn-secondary text-uppercase mr-3">Register</a>
-                    <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase mr-3">Register</a>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase">Login</a>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-warning  font-weight-bold">
-            <div class="container">
+        
+        <nav class="navbar navbar-expand-lg  mt-3  font-weight-bold">
+            <div class="container-fluid">
                 <a class="navbar-brand d-inline-block mr-4" href="#">
                     <img src="../assets/images/logo.png" alt="logo">
+                   <span class="nav-logo-text">ʍʏքɛȶֆռօա.ƈօʍ</span>
                 </a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 ">
                         <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/buy-sell.html">BUY/SELL </a></li>
                         <li class="nav-item"><a class="nav-link" href="/pages/contact-us.html">CONTACT </a></li>
                     </ul>
                 </div>
                 <a class="btn-add-pet d-flex text-decoration-none align-items-center text-uppercase animated fadeInRight"
-                    href="./add-pet.html">
+                    href="/pages/add-pet.html">
                     <div class="add-text">Add Pet</div>
                     <div class="icon-box position-relative text-center">
-                        <i class="fa fa-plus"></i>
+                        <img class="addpet-img" src="../assets/images/add-pet paw.png" alt="pet icon " height="60px" width="65px">
+                        <!-- <i style="margin-top: -10px;" class="fa fa-plus"></i> -->
                     </div>
                 </a>
             </div>
         </nav>
     </header>
+    <hr>
     <!-- Filters  -->
-<div class="container listing-page">
+<div class="container mt-2 listing-page">
 <div class="box no-border" id="jazzCashValidationErrorsDiv">
 <div class="box-tools">
 <p class="alert alert-warning alert-dismissible">
@@ -108,7 +114,7 @@
 <div class="form-group input-group icon-group">
 <input type="text" class="form-control " placeholder="Pet Name" name="search_term" value="">
 <div class="input-group-append">
-    <button class="btn btn-link">
+    <button class="btn-filter btn-link-filter">
         <i class="fa fa-search">
          <!-- ::before  -->
         </i>
@@ -434,9 +440,9 @@
   </div>
   </div>
 <!-- Right Column -->
-<div class="right-col">
+<div class="right-col mt-1">
     <div class="cards-list-header pets-list-header">
-<a href="" class="btn btn-primary filter-btn">
+<a href="" class="btn-filter btn-primary filter-btn">
     <i class="fa fa-filter"></i>
 </a>
 <h2 class="found-title">3814 Pets For Sale and Engage in Pakistan</h2>
@@ -458,12 +464,12 @@
         </div>
 <div class="rigt-col">
     <div class="form-group">
-        <button class="btn btn-link active" name="style" value="list" type="button" data-view="list-view">
+        <button class="btn-filter btn-link-filter active" name="style" value="list" type="button" data-view="list-view">
        <svg xmlns="http://www.w3.org/2000/svg" width="13.25" height="13" viewBox="0 0 13.25 13">
         <path class="cls-1" d="M1307,304h13.25v3.25H1307V304Zm0,4.875h13.25v3.25H1307v-3.25Zm0,4.875h13.25V317H1307v-3.25Z" transform="translate(-1307 -304)"></path>
          </svg>
         </button>
-        <button class="btn btn-link " name="style" value="map" type="button" data-view="map-view">                        
+        <button class="btn-filter btn-link-filter " name="style" value="map" type="button" data-view="map-view">                        
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15">
         <path class="cls-1" d="M1345.53,304.539a4.831,4.831,0,0,0-7.07,0,6.206,6.206,0,0,0-.47,7.382L1342,318l4-6.068A6.219,6.219,0,0,0,1345.53,304.539Zm-3.49,5.582a1.919,1.919,0,1,1,1.83-1.916A1.874,1.874,0,0,1,1342.04,310.121Z" transform="translate(-1337 -303)"></path>
         </svg>
@@ -480,8 +486,9 @@
 <div class="card-body">
     <div class="media">
         <div class="img-box-main">
-            <a href="/assets/images/parrot.jpeg">
-                <div class="img-box"></div>
+            <a href="../assets/images/parrot.jpeg">
+                <div class="img-box" style="background-image: url(../assets/images/parrot.jpeg);">
+                </div>
             </a>
             <div class="mt-2">
                 <div class="date-box mr-auto">
@@ -492,7 +499,7 @@ Updated March 20,2022
         <div class="media-body">
             <div class="media-body-header">
                 <div class="left-box">
-                    <a href="" class="card-title">
+                    <a href="../assets/images/parrot.jpeg" class="card-title">
                         Green Parrot
                     </a>
                 </div>
@@ -509,19 +516,19 @@ Updated March 20,2022
             </p>
             <ul class="pet-feature-list">
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                    <img src="/assets/images/color-icon.png" alt="color icon">
-                    <span>Brown</span>
+                    <img src="../assets/images/color-icon.png" alt="color icon">
+                    <span>Green</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                    <img src="/assets/images/age-icon.png" alt="age">
+                    <img src="../assets/images/age-icon.png" alt="age">
                     <span>1</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                    <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                    <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                     <span>No</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                    <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                    <img src="../assets/images/pet-group-icon.png" alt="group icon">
                     <span>Baby</span>
                 </li>
             </ul>
@@ -534,8 +541,8 @@ Updated March 20,2022
 <div class="card-body">
     <div class="media">
         <div class="img-box-main">
-            <a href="/assets/images/card2 img.jpeg">
-                <div class="img-box" style="background-image: url(/assets/images/card2\ img.jpeg);">
+            <a href="../assets/images/card2 img.jpeg">
+                <div class="img-box" style="background-image: url(../assets/images/card2\ img.jpeg);">
                 </div>
             </a>
             <div class="mt-2">
@@ -547,7 +554,7 @@ Updated February 18,2022
         <div class="media-body">
             <div class="media-body-header">
                 <div class="left-box">
-                    <a href="/assets/images/card2 img.jpeg" class="card-title">
+                    <a href="../assets/images/card2 img.jpeg" class="card-title">
                         Persian
                     </a>
                 </div>
@@ -559,24 +566,24 @@ Updated February 18,2022
                 </div>
             </div>
             <p class="card-text">
-                "More than tripple coated litter train age 18 Months semi punch face healthy & active"
+                "Tripple coated litter train age 18 Months semi punch face healthy & active" <br>
                 <a href="">See More</a>
             </p>
             <ul class="pet-feature-list">
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                    <img src="/assets/images/color-icon.png" alt="color icon">
+                    <img src="../assets/images/color-icon.png" alt="color icon">
                     <span>White</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                    <img src="/assets/images/age-icon.png" alt="age">
+                    <img src="../assets/images/age-icon.png" alt="age">
                     <span>1</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                    <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                    <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                     <span>No</span>
                 </li>
                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                    <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                    <img src="../assets/images/pet-group-icon.png" alt="group icon">
                     <span>Baby</span>
                 </li>              
             </ul>
@@ -589,8 +596,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 3.jpeg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 3.jpeg);">
+                <a href="../assets/images/cardimg 3.jpeg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 3.jpeg);">
                     </div>
                 </a>
 
@@ -603,7 +610,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 3.jpeg img.jpeg" class="card-title">
+                        <a href="../assets/images/cardimg 3.jpeg img.jpeg" class="card-title">
                             German Shepherd
                         </a>
                     </div>
@@ -620,19 +627,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>Black</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>1</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Young</span>
                     </li>              
                 </ul>
@@ -645,8 +652,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg4.jpg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg4.jpg);">
+                <a href="../assets/images/cardimg4.jpg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg4.jpg);">
                     </div>
                 </a>
 
@@ -659,7 +666,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg4.jpg" class="card-title">
+                        <a href="../assets/images/cardimg4.jpg" class="card-title">
                             Labrador
                         </a>
                     </div>
@@ -676,19 +683,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>3</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>Yes</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Young</span>
                     </li>              
                 </ul>
@@ -701,8 +708,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 5.png">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 5.png);">
+                <a href="../assets/images/cardimg 5.png">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 5.png);">
                     </div>
                 </a>
 
@@ -715,7 +722,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 5.png" class="card-title">
+                        <a href="../assets/images/cardimg 5.png" class="card-title">
                             Cocktail Parrot
                         </a>
                     </div>
@@ -732,19 +739,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>2</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Young</span>
                     </li>              
                 </ul>
@@ -757,8 +764,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 6.jpg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 6.jpg);">
+                <a href="../assets/images/cardimg 6.jpg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 6.jpg);">
                     </div>
                 </a>
 
@@ -771,7 +778,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 6.jpg" class="card-title">
+                        <a href="../assets/images/cardimg 6.jpg" class="card-title">
                            Rabbits
                         </a>
                     </div>
@@ -788,19 +795,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>1</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>Yes</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Baby</span>
                     </li>              
                 </ul>
@@ -813,8 +820,8 @@ Updated February 18,2022
         <div class="card-body">
             <div class="media">
                 <div class="img-box-main">
-                    <a href="/assets/images/cardimg 7.png">
-                        <div class="img-box" style="background-image: url(/assets/images/cardimg\ 7.png);">
+                    <a href="../assets/images/cardimg 7.png">
+                        <div class="img-box" style="background-image: url(../assets/images/cardimg\ 7.png);">
                         </div>
                     </a>
     
@@ -827,7 +834,7 @@ Updated February 18,2022
                 <div class="media-body">
                     <div class="media-body-header">
                         <div class="left-box">
-                            <a href="/assets/images/cardimg 7.png" class="card-title">
+                            <a href="../assets/images/cardimg 7.png" class="card-title">
                                 Gucci
                             </a>
                         </div>
@@ -844,19 +851,19 @@ Updated February 18,2022
                     </p>
                     <ul class="pet-feature-list">
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                            <img src="/assets/images/color-icon.png" alt="color icon">
+                            <img src="../assets/images/color-icon.png" alt="color icon">
                             <span>Grey</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                            <img src="/assets/images/age-icon.png" alt="age">
+                            <img src="../assets/images/age-icon.png" alt="age">
                             <span>1</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                            <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                            <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                             <span>No</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                            <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                            <img src="../assets/images/pet-group-icon.png" alt="group icon">
                             <span>Young</span>
                         </li>              
                     </ul>
@@ -869,8 +876,8 @@ Updated February 18,2022
             <div class="card-body">
                 <div class="media">
                     <div class="img-box-main">
-                        <a href="/assets/images/cardimg 8.jpeg">
-                            <div class="img-box" style="background-image: url(/assets/images/cardimg\ 8.jpeg);">
+                        <a href="../assets/images/cardimg 8.jpeg">
+                            <div class="img-box" style="background-image: url(../assets/images/cardimg\ 8.jpeg);">
                             </div>
                         </a>
         
@@ -883,7 +890,7 @@ Updated February 18,2022
                     <div class="media-body">
                         <div class="media-body-header">
                             <div class="left-box">
-                                <a href="/assets/images/cardimg 8.jpeg" class="card-title">
+                                <a href="../assets/images/cardimg 8.jpeg" class="card-title">
                                    Mistiee
                                 </a>
                             </div>
@@ -895,24 +902,24 @@ Updated February 18,2022
                             </div>
                         </div>
                         <p class="card-text">
-                            very Active, Healthy, Litter Trained, Fluffy, Triple Coated Age 2 Month
+                            very Active, Healthy, Trained, Fluffy, Triple Coated Age 2 Month
                             <a href="">See More</a>
                         </p>
                         <ul class="pet-feature-list">
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                                <img src="/assets/images/color-icon.png" alt="color icon">
+                                <img src="../assets/images/color-icon.png" alt="color icon">
                                 <span>Grey</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                                <img src="/assets/images/age-icon.png" alt="age">
+                                <img src="../assets/images/age-icon.png" alt="age">
                                 <span>2</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                                <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                                <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                                 <span>No</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                                <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                                <img src="../assets/images/pet-group-icon.png" alt="group icon">
                                 <span>Baby</span>
                             </li>              
                         </ul>
@@ -925,8 +932,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 9.jpeg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 9.jpeg);">
+                <a href="../assets/images/cardimg 9.jpeg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 9.jpeg);">
                     </div>
                 </a>
 
@@ -939,7 +946,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 9.jpeg" class="card-title">
+                        <a href="../assets/images/cardimg 9.jpeg" class="card-title">
                             Persian
                         </a>
                     </div>
@@ -956,19 +963,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>2</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Baby</span>
                     </li>              
                 </ul>
@@ -981,8 +988,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 10.jpeg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 10.jpeg);">
+                <a href="../assets/images/cardimg 10.jpeg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 10.png);">
                     </div>
                 </a>
 
@@ -995,7 +1002,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 10.jpeg" class="card-title">
+                        <a href="../assets/images/cardimg 10.png" class="card-title">
                             Persian
                         </a>
                     </div>
@@ -1012,19 +1019,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
-                        <span>Brown</span>
+                        <img src="../assets/images/color-icon.png" alt="color icon">
+                        <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>3</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Baby</span>
                     </li>              
                 </ul>
@@ -1037,8 +1044,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/card img 11.jpeg">
-                    <div class="img-box" style="background-image: url(/assets/images/card\ img\ 11.jpeg);">
+                <a href="../assets/images/card img 11.jpeg">
+                    <div class="img-box" style="background-image: url(../assets/images/card\ img\ 11.jpeg);">
                     </div>
                 </a>
 
@@ -1051,7 +1058,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/card img 11.jpeg" class="card-title">
+                        <a href="../assets/images/card img 11.jpeg" class="card-title">
                             Husky Puppy
                         </a>
                     </div>
@@ -1068,19 +1075,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>Black</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>1</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Baby</span>
                     </li>              
                 </ul>
@@ -1093,8 +1100,8 @@ Updated February 18,2022
     <div class="card-body">
         <div class="media">
             <div class="img-box-main">
-                <a href="/assets/images/cardimg 12.jpeg">
-                    <div class="img-box" style="background-image: url(/assets/images/cardimg\ 12.jpeg);">
+                <a href="../assets/images/cardimg 12.jpeg">
+                    <div class="img-box" style="background-image: url(../assets/images/cardimg\ 12.jpeg);">
                     </div>
                 </a>
 
@@ -1107,7 +1114,7 @@ Updated February 18,2022
             <div class="media-body">
                 <div class="media-body-header">
                     <div class="left-box">
-                        <a href="/assets/images/cardimg 12.jpeg" class="card-title">
+                        <a href="../assets/images/cardimg 12.jpeg" class="card-title">
                             Horse
                         </a>
                     </div>
@@ -1124,19 +1131,19 @@ Updated February 18,2022
                 </p>
                 <ul class="pet-feature-list">
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                        <img src="/assets/images/color-icon.png" alt="color icon">
+                        <img src="../assets/images/color-icon.png" alt="color icon">
                         <span>White</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                        <img src="/assets/images/age-icon.png" alt="age">
+                        <img src="../assets/images/age-icon.png" alt="age">
                         <span>3</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                        <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                        <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                         <span>No</span>
                     </li>
                     <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                        <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                        <img src="../assets/images/pet-group-icon.png" alt="group icon">
                         <span>Young</span>
                     </li>              
                 </ul>
@@ -1150,8 +1157,8 @@ Updated February 18,2022
         <div class="card-body">
             <div class="media">
                 <div class="img-box-main">
-                    <a href="/assets/images/card img 13.png">
-                        <div class="img-box" style="background-image: url(/assets/images/card\ img\ 13.png);">
+                    <a href="../assets/images/card img 13.png">
+                        <div class="img-box" style="background-image: url(../assets/images/card\ img\ 13.png);">
                         </div>
                     </a>
     
@@ -1164,7 +1171,7 @@ Updated February 18,2022
                 <div class="media-body">
                     <div class="media-body-header">
                         <div class="left-box">
-                            <a href="/assets/images/card img 13.png" class="card-title">
+                            <a href="../assets/images/card img 13.png" class="card-title">
                                 Maine Coon cat
                             </a>
                         </div>
@@ -1181,19 +1188,19 @@ Updated February 18,2022
                     </p>
                     <ul class="pet-feature-list">
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                            <img src="/assets/images/color-icon.png" alt="color icon">
+                            <img src="../assets/images/color-icon.png" alt="color icon">
                             <span>Grey</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                            <img src="/assets/images/age-icon.png" alt="age">
+                            <img src="../assets/images/age-icon.png" alt="age">
                             <span>1</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                            <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                            <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                             <span>Yes</span>
                         </li>
                         <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                            <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                            <img src="../assets/images/pet-group-icon.png" alt="group icon">
                             <span>Young</span>
                         </li>              
                     </ul>
@@ -1207,8 +1214,8 @@ Updated February 18,2022
             <div class="card-body">
                 <div class="media">
                     <div class="img-box-main">
-                        <a href="/assets/images/cardimg 14.png">
-                            <div class="img-box" style="background-image: url(/assets/images/cardimg\ 14.png);">
+                        <a href="../assets/images/cardimg 14.png">
+                            <div class="img-box" style="background-image: url(../assets/images/cardimg\ 14.png);">
                             </div>
                         </a>
         
@@ -1221,7 +1228,7 @@ Updated February 18,2022
                     <div class="media-body">
                         <div class="media-body-header">
                             <div class="left-box">
-                                <a href="/assets/images/cardimg 14.png" class="card-title">
+                                <a href="../assets/images/cardimg 14.png" class="card-title">
                                     Poodle puppy
                                 </a>
                             </div>
@@ -1238,19 +1245,19 @@ Updated February 18,2022
                         </p>
                         <ul class="pet-feature-list">
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                                <img src="/assets/images/color-icon.png" alt="color icon">
+                                <img src="../assets/images/color-icon.png" alt="color icon">
                                 <span>White</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                                <img src="/assets/images/age-icon.png" alt="age">
+                                <img src="../assets/images/age-icon.png" alt="age">
                                 <span>1</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                                <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                                <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                                 <span>Yes</span>
                             </li>
                             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                                <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                                <img src="../assets/images/pet-group-icon.png" alt="group icon">
                                 <span>Young</span>
                             </li>              
                         </ul>
@@ -1264,8 +1271,8 @@ Updated February 18,2022
                 <div class="card-body">
                     <div class="media">
                         <div class="img-box-main">
-                            <a href="/assets/images/cardimg 15.png">
-                                <div class="img-box" style="background-image: url(/assets/images/cardimg\ 15.png);">
+                            <a href="../assets/images/cardimg 15.png">
+                                <div class="img-box" style="background-image: url(../assets/images/cardimg\ 15.png);">
                                 </div>
                             </a>
             
@@ -1278,7 +1285,7 @@ Updated February 18,2022
                         <div class="media-body">
                             <div class="media-body-header">
                                 <div class="left-box">
-                                    <a href="/assets/images/cardimg 15.png" class="card-title">
+                                    <a href="../assets/images/cardimg 15.png" class="card-title">
                                         Rottweiler
                                     </a>
                                 </div>
@@ -1295,19 +1302,19 @@ Updated February 18,2022
                             </p>
                             <ul class="pet-feature-list">
                                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Color" >
-                                    <img src="/assets/images/color-icon.png" alt="color icon">
+                                    <img src="../assets/images/color-icon.png" alt="color icon">
                                     <span>Black</span>
                                 </li>
                                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Age" >
-                                    <img src="/assets/images/age-icon.png" alt="age">
+                                    <img src="../assets/images/age-icon.png" alt="age">
                                     <span>4</span>
                                 </li>
                                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Vaccination" >
-                                    <img src="/assets/images/vaccination-icon.png" alt="Vaccination">
+                                    <img src="../assets/images/vaccination-icon.png" alt="Vaccination">
                                     <span>Yes</span>
                                 </li>
                                 <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Group" >
-                                    <img src="/assets/images/pet-group-icon.png" alt="group icon">
+                                    <img src="../assets/images/pet-group-icon.png" alt="group icon">
                                     <span>Baby</span>
                                 </li>              
                             </ul>
@@ -1324,14 +1331,14 @@ Updated February 18,2022
 <li class="page-item active" aria-current="page">
 <span class="page-link">1</span>
 </li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=2">2</a></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=3">3</a></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=4">4</a></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=5">5</a></li>
+<li class="page-item"><a class="page-link" href="">2</a></li>
+<li class="page-item"><a class="page-link" href="">3</a></li>
+<li class="page-item"><a class="page-link" href="">4</a></li>
+<li class="page-item"><a class="page-link" href="">5</a></li>
 <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=10">10</a></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=11">11</a></li>
-<li class="page-item"><a class="page-link" href="https://www.agentpet.com/pet-list?page=12">12</a></li>
+<li class="page-item"><a class="page-link" href="">10</a></li>
+<li class="page-item"><a class="page-link" href="">11</a></li>
+<li class="page-item"><a class="page-link" href="">12</a></li>
 <li class="page-item">
     <a class="page-link" href="https://www.agentpet.com/pet-list?page=2" rel="next" aria-label="Next »">›</a>
 </li>
@@ -1368,14 +1375,14 @@ Updated February 18,2022
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="logo-box">
-                    <img src="https://www.agentpet.com/img/agent-pet-logo-white.png" alt="Agentpet"
-                        class="img-fluid">
+                    <img src="../assets/images/logo.png" alt="logo"
+                        class="img-fluid addpet-img" height="95px" width="100px">
+                        <span>ʍʏքɛȶֆռօա.ƈօʍ</span>
                 </div>
-                <p>Based globally AgentPet.com is one of the reputable and devoted website that offers genuine
-                    services for your beloved pets.</p>
             </div>
+            <hr>
             <div class="col-md-6 col-lg-5">
-                <form action="https://www.agentpet.com/subscribe" method="post" class="mt-4">
+                <form action="" method="post" class="mt-4">
                     <input type="hidden" name="_token">
                     <div class="footer-input-group input-group mb-3">
                         <input type="email" class="form-control"
@@ -1392,22 +1399,22 @@ Updated February 18,2022
                     <span class="mr-2" style="font-weight: 600;">Follow Us:</span>
                     <ul class="footer-social-list list-inline">
                         <li>
-                            <a target="_blank" href="https://twitter.com/agentpetdotcom/">
+                            <a target="_blank" href="">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.facebook.com/agentpetpakistan/">
+                            <a target="_blank" href="">
                                 <i class="fab fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.instagram.com/officialagentpet/">
+                            <a target="_blank" href="">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.pinterest.com/agentpet/pins/">
+                            <a target="_blank" href="">
                                 <i class="fab fa-pinterest-p"></i>
                             </a>
                         </li>
@@ -1418,46 +1425,28 @@ Updated February 18,2022
                 <h5 class="section-title list-title">Pets for Sale in PAKISTAN</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/dogs/pakistan">Dog for Sale</a>
+                        <a href="">Dog for Sale</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/cats/pakistan">Cat for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/fishes/pakistan">Fishes for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/birds/pakistan">Birds for Sale</a>
+                        <a href="">Cat for Sale</a>
                     </li>
                 </ul>
                 <h5 class="section-title list-title">Dogs for Sale</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/dogs/lahore">Dogs for Sale in Lahore</a>
+                        <a href="">Dogs for Sale in Lahore</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/dogs/karachi">Dogs for Sale in Karachi</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/dogs/islamabad">Dogs for Sale in Islamabad</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/dogs/rawalpindi">Dogs for Sale in Rawalpindi</a>
+                        <a href="">Dogs for Sale in Karachi</a>
                     </li>
                 </ul>
                 <h5 class="section-title list-title">Cats for Sale</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/cats/lahore">Cats for Sale in Lahore</a>
+                        <a href="">Cats for Sale in Islamabad</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/cats/karachi">Cats for Sale in Karachi</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/cats/islamabad">Cats for Sale in Islamabad</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/cats/rawalpindi">Cats for Sale in Rawalpindi</a>
+                        <a href="">Cats for Sale in Rawalpindi</a>
                     </li>
                 </ul>
             </div>
@@ -1465,143 +1454,79 @@ Updated February 18,2022
                 <h5 class="section-title list-title">Birds for Sale</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/birds/lahore">Birds for Sale in Lahore</a>
+                        <a href="">Birds for Sale in Lahore</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/birds/karachi">Birds for Sale in Karachi</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/birds/islamabad">Birds for Sale in Islamabad</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/birds/rawalpindi">Birds for Sale in Rawalpindi</a>
+                        <a href="">Birds for Sale in Karachi</a>
                     </li>
                 </ul>
                 <h5 class="section-title list-title">Fishes for Sale</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/fishes/lahore">Fishes for Sale in Lahore</a>
+                        <a href="">Fishes for Sale in Islamabad</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/fishes/karachi">Fishes for Sale in Karachi</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/fishes/islamabad">Fishes for Sale in Islamabad</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/fishes/rawalpindi">Fishes for Sale in Rawalpindi</a>
+                        <a href="">Fishes for Sale in Rawalpindi</a>
                     </li>
                 </ul>
                 <h5 class="section-title list-title">Pet Food for Sale</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/dog-food">Dog Food for Sale</a>
+                        <a href="">Dog Food for Sale</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/cat-food">Cat Food for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/bird-food">Bird Food for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/fish-food">Fish Food for Sale</a>
+                        <a href="">Cat Food for Sale</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <h5 class="section-title list-title">Pet ACCESSORIES for Sale</h5>
-                <ul class="menu-list list-unstyled">
-                    <li>
-                        <a href="https://www.agentpet.com/dog-accessories">Dog Accessories for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/cat-accessories">Cat Accessories for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/bird-accessories">Bird Accessories for Sale</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/fish-accessories">Fish Accessories for Sale</a>
-                    </li>
-
                 </ul>
                 <h5 class="section-title list-title">Pets by City</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/pet-search?city=Lahore">Pets in Lahore</a>
+                        <a href="">Pets in Lahore</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/pet-search?city=Karachi">Pets in Karachi</a>
+                        <a href="">Pets in Karachi</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/pet-search?city=Islamabad">Pets in Islamabad</a>
+                        <a href="">Pets in Islamabad</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/pet-search?city=Rawalpindi">Pets in Rawalpindi</a>
+                        <a href="">Pets in Rawalpindi</a>
                     </li>
-                </ul>
-                <h5 class="section-title list-title">Pets by Color</h5>
-                <ul class="menu-list list-unstyled">
-                    <li>
-                        <a href="https://www.agentpet.com/white-pets">White Pets</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/black-pets">Black Pets</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/brown-pets">Brown Pets</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/grey-pets">Grey Pets</a>
-                    </li>
-                </ul>
 
+                </ul>
+                <small class="small-font">Member of</small>
+                <div class="logos-box">
+                    <figure>
+                        <img src="https://www.agentpet.com/img/pan.jpg" alt="PAN" class="img-fluid">
+                    </figure>
+                </div>
             </div>
             <div class="col-md-3">
 
                 <h5 class="section-title list-title">Pets by Temperament</h5>
                 <ul class="menu-list list-unstyled">
                     <li>
-                        <a href="https://www.agentpet.com/protective-pets">Protective Pets</a>
+                        <a href="">Protective Pets</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/playful-pets">Playful Pets</a>
+                        <a href="">Playful Pets</a>
                     </li>
                     <li>
-                        <a href="https://www.agentpet.com/affectionate-pets">Affectionate Pets</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/gentle-pets">Gentle Pets</a>
+                        <a href="">Gentle Pets</a>
                     </li>
                 </ul>
                 <h5 class="section-title list-title">Pets BY Compatibility</h5>
                 <ul class="menu-list list-unstyled">
-                    <li>
-                        <a href="https://www.agentpet.com/okay-with-kids">Okay With Kids</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/okay-with-dogs">Okay With Dogs</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/okay-with-cats">Okay With Cats</a>
-                    </li>
-                    <li>
-                        <a href="https://www.agentpet.com/okay-with-appartments">Okay With Apartments</a>
+                   <li>
+                        <a href="">Okay With Kids</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-md-3">
-                <small class="small-font">Member of</small>
-                <div class="logos-box">
-                    <figure>
-                        <img src="https://www.agentpet.com/img/ata.jpg" alt="ATA" class="img-fluid">
-                    </figure>
-                    <figure>
-                        <img src="https://www.agentpet.com/img/pan.jpg" alt="PAN" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
+            
             <div class="col-md-3">
 
                 <div class="logos-box">
@@ -1611,28 +1536,22 @@ Updated February 18,2022
                         margin-bottom: 20px;
                     ">
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.mark.agent_pet" target="_blank">
-                        <img src="https://www.agentpet.com/img/play.png" alt="PAN" class="img-fluid" style="
-                    width: 200px;
-                    margin-bottom: 10px;
-                ">
-                    </a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="copyright-box">
                     <ul class="list-unstyled small-link-list">
                         <li class="nav-item ">
-                            <a href="https://www.agentpet.com/about-us">About Us</a>
+                            <a href="">About Us</a>
                         </li>
                         <li>
-                            <a href="https://www.agentpet.com/privacy">Privacy Policy</a>
+                            <a href="">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="https://www.agentpet.com/terms">Terms of use</a>
+                            <a href="">Terms of use</a>
                         </li>
                         <li>
-                            <a href="https://www.agentpet.com/contact-us">Contact</a>
+                            <a href="">Contact</a>
                         </li>
                     </ul>
                     <p class="copyright-text">© 2022 AGENTPET. All rights reserved. <a target="_blank"

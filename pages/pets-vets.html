@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws | Pets Online Store in Pakistan</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+     <!-- fonts -->
+     <script src="https://kit.fontawesome.com/439932ce9d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/slick/slick.css">
     <link rel="stylesheet" href="../assets/slick/slick-theme.css">
     <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
@@ -17,58 +18,63 @@
 </head>
 
 <body>
-<header class="w-100">
-    <div class="container">
-        <div class="top-header d-flex justify-content-between">
-            <div class="top-header-left">
-                <div class="social-list-box d-flex align-items-center mr-auto">
-                    <span>Follow Us</span>
-                    <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="top-header-right d-flex align-items-center justify-content-end">
-                <div class="cart-box">
-                    <ul class="list-unstyled mb-0 mr-4">
-                        <li class="cart-main">
-                            <a href="#">
-                                <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
-                                <span>0 - Item</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase mr-3">Register</a>
-                <a href="#" class="btn btn-sm btn-secondary text-uppercase">Login</a>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <header class="w-100">
         <div class="container">
-            <a class="navbar-brand d-inline-block mr-4" href="#">
-                <img src="../assets/images/logo.png" alt="logo">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">BUY/SELL </a></li>
-                    <li class="nav-item"><a class="nav-link" href="">CONTACT </a></li>
-                </ul>
-            </div>
-            <a class="btn-add-pet d-flex align-items-center text-uppercase animated fadeInRight text-decoration-none" href="#">
-                <div class="add-text">Add Pet</div>
-                <div class="icon-box position-relative text-center">
-                    <i class="fa fa-plus"></i>
+            <div class="top-header d-flex justify-content-between">
+                <div class="top-header-left">
+                    <div class="social-list-box text-dark d-flex align-items-center mr-auto">
+                        <span >Follow Us</span>
+                        <ul class="social-list d-flex align-items-center ml-3 list-unstyled mb-0">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
+                <div class="top-header-right d-flex align-items-center justify-content-end">
+                    <div class="cart-box">
+                        <ul class="list-unstyled mb-0 mr-4">
+                            <li class="cart-main">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="../assets/images/cart-basket-icon-red.svg" alt="cart image">
+                                    <span class="text-danger">0 - Item</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase mr-3">Register</a>
+                    <a href="#" class="btn btn-sm btn-dark text-uppercase">Login</a>
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
+        
+        <nav class="navbar navbar-expand-lg  mt-3  font-weight-bold">
+            <div class="container-fluid">
+                <a class="navbar-brand d-inline-block mr-4" href="#">
+                    <img src="../assets/images/logo.png" alt="logo">
+                   <span class="nav-logo-text">ʍʏքɛȶֆռօա.ƈօʍ</span>
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item"><a class="nav-link" href="/pages/index.html">HOME </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/pets-vets.html">PETS AND VETS </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/buy-sell.html">BUY/SELL </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/contact-us.html">CONTACT </a></li>
+                    </ul>
+                </div>
+                <a class="btn-add-pet d-flex text-decoration-none align-items-center text-uppercase animated fadeInRight"
+                    href="/pages/add-pet.html">
+                    <div class="add-text">Add Pet</div>
+                    <div class="icon-box position-relative text-center">
+                        <img class="addpet-img" src="../assets/images/add-pet paw.png" alt="pet icon " height="60px" width="65px">
+                        <!-- <i style="margin-top: -10px;" class="fa fa-plus"></i> -->
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <hr>
 
 <!-- Breadcrumbs -->
 <div class="container">
@@ -1683,6 +1689,199 @@
 <!--</div>-->
 <div>
 </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="logo-box">
+                    <img src="../assets/images/logo.png" alt="logo"
+                        class="img-fluid addpet-img" height="95px" width="100px">
+                        <span>ʍʏքɛȶֆռօա.ƈօʍ</span>
+                </div>
+            </div>
+            <hr>
+            <div class="col-md-6 col-lg-5">
+                <form action="" method="post" class="mt-4">
+                    <input type="hidden" name="_token">
+                    <div class="footer-input-group input-group mb-3">
+                        <input type="email" class="form-control"
+                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" name="email"
+                            required="required" placeholder="Email Address" aria-label="Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-white" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="social-list-box mt-4">
+                    <span class="mr-2" style="font-weight: 600;">Follow Us:</span>
+                    <ul class="footer-social-list list-inline">
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 class="section-title list-title">Pets for Sale in PAKISTAN</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dog for Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Cat for Sale</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Dogs for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dogs for Sale in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Dogs for Sale in Karachi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Cats for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Cats for Sale in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Cats for Sale in Rawalpindi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="section-title list-title">Birds for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Birds for Sale in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Birds for Sale in Karachi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Fishes for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Fishes for Sale in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Fishes for Sale in Rawalpindi</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Pet Food for Sale</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Dog Food for Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Cat Food for Sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                </ul>
+                <h5 class="section-title list-title">Pets by City</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Pets in Lahore</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Karachi</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Islamabad</a>
+                    </li>
+                    <li>
+                        <a href="">Pets in Rawalpindi</a>
+                    </li>
+
+                </ul>
+                <small class="small-font">Member of</small>
+                <div class="logos-box">
+                    <figure>
+                        <img src="https://www.agentpet.com/img/pan.jpg" alt="PAN" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-3">
+
+                <h5 class="section-title list-title">Pets by Temperament</h5>
+                <ul class="menu-list list-unstyled">
+                    <li>
+                        <a href="">Protective Pets</a>
+                    </li>
+                    <li>
+                        <a href="">Playful Pets</a>
+                    </li>
+                    <li>
+                        <a href="">Gentle Pets</a>
+                    </li>
+                </ul>
+                <h5 class="section-title list-title">Pets BY Compatibility</h5>
+                <ul class="menu-list list-unstyled">
+                   <li>
+                        <a href="">Okay With Kids</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="col-md-3">
+
+                <div class="logos-box">
+                    <a href="https://apps.apple.com/gb/app/agentpet/id1533453500" target="_blank">
+                        <img src="https://www.agentpet.com/img/appstore.png" alt="ATA" class="img-fluid" style="
+                        width: 200px;
+                        margin-bottom: 20px;
+                    ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="copyright-box">
+                    <ul class="list-unstyled small-link-list">
+                        <li class="nav-item ">
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright-text">© 2022 AGENTPET. All rights reserved. <a target="_blank"
+                            href="http://www.nextbridge.pk/">Powered by Nextbridge.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
 </body>
 
 
